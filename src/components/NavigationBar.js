@@ -4,22 +4,19 @@ import { LinkContainer } from 'react-router-bootstrap';
 function NavigationBar() {
 return (
 
-
-
   <Navbar style={{paddingLeft:"25px"}} collapseOnSelect expand="lg" bg="dark" variant="dark">
-  <Navbar.Brand>Oliver Li - Personal Website</Navbar.Brand>
+  <p style = {{color: "white", marginRight:"20px"}} class = "font-monospace h1 mb-0"> oliver li</p>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" style={{marginRight:"50px"}}/>
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
-    <LinkContainer to ="/">
-        <Nav.Link>🏠 &nbsp;&nbsp;Home</Nav.Link>
-    </LinkContainer>
-    <LinkContainer to ="/hobbies">
-        <Nav.Link>🧗 &nbsp;&nbsp;Hobbies</Nav.Link>
-    </LinkContainer>
-    <LinkContainer to ="/about">
-        <Nav.Link>📖&nbsp;&nbsp;About</Nav.Link>
-    </LinkContainer>
+        <Nav.Link href="#home">home</Nav.Link>
+        <Nav.Link href="#about">about me</Nav.Link>
+        <Nav.Link href="#projects">projects</Nav.Link>
+        <Nav.Link href="#work_experience">work experience</Nav.Link>
+        <Nav.Link href="#coursework">coursework</Nav.Link>
+        <Nav.Link href="#resume">resume</Nav.Link>
+
+
     </Nav>
   </Navbar.Collapse>
 </Navbar>
