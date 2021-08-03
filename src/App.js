@@ -47,6 +47,7 @@ return (
           After my sophomore year, I did a data science internship at Principal Financial Group, where I learned that I love creating 
           accessible and intuitive user experiences and making data-driven decisions.  <a style ={{textDecoration: 'none'}}  target= "_blank" href = "https://www.si.umich.edu/about-umsi"> I then decided to take on an additional major through the School of Information in Applied Data Science & User Experience Design. 
           </a> After gaining some rudimentary programming skills, I realized it was paramount to have a foundation in computer science to have a solid understanding of core engineering principles so that I could build products from the ground up myself.  <a target = "_blank" style ={{textDecoration: 'none'}} href = "https://cse.engin.umich.edu/"> Somehow, I also managed to tack on a minor in computer science in addition to my dual degree with a concentration in User Interface Design. </a>
+          <br/>
           My interdisciplinary studies in engineering, business, and design have lead me to be really interested in a career in 
           product management/operations/analytics roles. </p> 
           <h2 id = "projects" style = {{marginTop: "20px"}}> <FaClipboardCheck/> projects </h2> 
@@ -72,7 +73,7 @@ return (
                     <Card.Body>
                       <Card.Title>🎾 tennis friends </Card.Title>
                       <Card.Text>
-                        Last winter, I also spent a lot of time creating a social network website to help tennis players find people of equal level to hit and become friends with. 
+                        Last winter, I also spent a lot of time creating a social network website to help tennis players find people of equal level to hit with. 
                       </Card.Text>
                     </Card.Body>
                     <ListGroup className="list-group-flush">
@@ -85,7 +86,7 @@ return (
               <Col xs = {12} sm = {12} md = {6} lg = {4}>
                 <Card className = "bob-on-hover" border="dark" style={{ width: '18rem' }}>
                     <Card.Body>
-                      <Card.Title> 🏭 detroit manufacturing systems </Card.Title>
+                      <Card.Title> 🔧 detroit manufacturing systems </Card.Title>
                       <Card.Text>
                         I was a part of a team of 7 in the Multidisciplinary Design Program (MDP) at Michigan. I spent a year in a manufacturing plant optimizing operations and the supply chain of rejected automotive parts. 
                       </Card.Text>
@@ -98,9 +99,9 @@ return (
               <Col xs = {12} sm = {12} md = {6} lg = {4}>  
                 <Card className = "bob-on-hover" border="dark" style={{ width: '18rem' }}>
                     <Card.Body>
-                      <Card.Title> cover letter generator</Card.Title>
+                      <Card.Title> 📄 cover letter generator</Card.Title>
                       <Card.Text>
-                        I created a cover letter generator with my friend to help us navigate recruiting and applying to different types of jobs. 
+                        I created a cover letter generator with my friend to help us navigate recruiting and applying to different types of jobs easily.  
                       </Card.Text>
                     </Card.Body>
                     <ListGroup className="list-group-flush">
