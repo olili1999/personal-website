@@ -9,10 +9,10 @@ return (
   <Navbar.Toggle aria-controls="responsive-navbar-nav" style={{marginRight:"50px"}}/>
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
-        <Nav.Link href="#about">about me</Nav.Link>
-        <Nav.Link href="#projects">projects</Nav.Link>
-        <Nav.Link href="#work_experience">work experience</Nav.Link>
-        <Nav.Link href="#coursework">coursework</Nav.Link>
+        <Nav.Link className = "hvr-underline-reveal" href="#about">about me</Nav.Link>
+        <Nav.Link className = "hvr-underline-reveal" href="#projects">projects</Nav.Link>
+        <Nav.Link className = "hvr-underline-reveal" href="#work_experience">work experience</Nav.Link>
+        <Nav.Link className = "hvr-underline-reveal" href="#coursework">coursework</Nav.Link>
 
 
     </Nav>
