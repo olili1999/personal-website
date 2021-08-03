@@ -13,7 +13,6 @@ return (
         <Nav.Link href="#projects">projects</Nav.Link>
         <Nav.Link href="#work_experience">work experience</Nav.Link>
         <Nav.Link href="#coursework">coursework</Nav.Link>
-        <Nav.Link href="#resume">resume</Nav.Link>
 
 
     </Nav>
