@@ -3,12 +3,13 @@ import NavigationBar from './components/NavigationBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import headshot_outside from './headshot_outside.jpg'
-import {Card, Row, Col, Button, ListGroupItem, ListGroup, Container} from 'react-bootstrap';
+import {Card, Row, Col, Button, ListGroupItem, ListGroup, Container, Image} from 'react-bootstrap';
 import { FaMapMarker, FaGithub, FaClipboardCheck} from "react-icons/fa";
 import { BsPersonLinesFill } from "react-icons/bs";
 import {MdWork} from "react-icons/md"; 
 import {IoLogoLinkedin} from "react-icons/io";
 import { IoDocumentTextSharp } from "react-icons/io5";
+import Umich from "./UMich.png"; 
 
 // https://faiizii992.medium.com/creating-a-navbar-using-react-router-dom-and-react-bootstrap-react-router-bootstrap-e6b59015a5ec
 
@@ -26,9 +27,10 @@ return (
           <Card style={{width: '20rem', margin: '20px 0 20px 20px'}}>
             <Card.Img variant="top" src= {headshot_outside}/>
             <Card.Body>
-              <Card.Title>Oliver Li</Card.Title>
+              <Card.Title> Oliver Li</Card.Title>
               <Card.Text>
-              Industrial & Operations Engineering, Applied Data Science & UX, and Computer Science <strong> @ University of Michigan, Class of 2022 </strong>
+              Industrial & Operations Engineering, Applied Data Science & UX, and Computer Science <strong> @ &nbsp;<Image src = {Umich} style = {{width: "25px"}} rounded/> <br/>
+ Class of 2022 </strong>
               </Card.Text>
             </Card.Body>
           <ListGroup className="list-group-flush">
