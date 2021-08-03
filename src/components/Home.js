@@ -1,7 +1,29 @@
 import React from 'react';
 function Home() {
 return (
-    <div>THIS IS THE Home PAGE</div>
+    <div>
+    <p> home page </p>
+
+    <p> home page </p>
+    <p> home page </p>
+    <p> home page </p>
+    <p> home page </p>
+    <p> home page </p>
+    <p> home page </p>
+    <p> home page </p>
+    <p> home page </p>
+    <p> home page </p>
+    <p> home page </p>
+    <p> home page </p>
+    <p> home page </p>
+    <p> home page </p>
+    <p> home page </p>
+    <p> home page </p>
+    <p> home page </p>
+    <p> home page </p>
+    <p> home page </p>
+    <p> home page </p>
+    </div>
 );
 
 }

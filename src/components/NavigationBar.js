@@ -5,11 +5,10 @@ function NavigationBar() {
 return (
 
   <Navbar style={{paddingLeft:"25px"}} collapseOnSelect expand="lg" bg="dark" variant="dark">
-  <p style = {{color: "white", marginRight:"20px"}} class = "font-monospace h1 mb-0"> oliver li</p>
+  <p style = {{color: "white", marginRight:"20px"}} class = "font-monospace h2 mb-0"> oliver li</p>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" style={{marginRight:"50px"}}/>
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
-        <Nav.Link href="#home">home</Nav.Link>
         <Nav.Link href="#about">about me</Nav.Link>
         <Nav.Link href="#projects">projects</Nav.Link>
         <Nav.Link href="#work_experience">work experience</Nav.Link>
