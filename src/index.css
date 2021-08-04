@@ -10,6 +10,8 @@ body {
 mark{ 
   background-color: #e8f0fa !important; 
   color: #0c63e4; 
+  padding:0 !important; 
+  margin: 0 !important; 
 }
 
 code {

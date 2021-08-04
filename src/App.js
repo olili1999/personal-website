@@ -27,7 +27,7 @@ return (
          {/* position: "sticky", top: "0px" in Col below*/}
         <Col xs = {12} sm = {12} md ={3} style = {{height: "100%"}} className = "d-flex justify-content-center"> 
           <Card className = "mt-4" style={{width: '20rem'}}>
-          <OverlayTrigger placement ="bottom" overlay={<Tooltip> Me, at the Sand Dunes in Upper Peninsula in Michigan!</Tooltip>}>
+          <OverlayTrigger placement ="bottom" overlay={<Tooltip> Me, at the Sleeping Bear Dunes in Michigan!</Tooltip>}>
             <Card.Img src= {headshot_outside}/>
           </OverlayTrigger>
      
@@ -64,6 +64,75 @@ return (
           <br/>
           My interdisciplinary studies in engineering, business, and design have lead me to be really interested in a career in 
           product management/operations/analytics roles. </p> 
+          <h3 id = "work_experience" className = "mt-3"> <MdWork/> Work Experience </h3> 
+          <p> My work experience spans across data science, strategy & operations, and product management.  </p> 
+
+          <Accordion defaultActiveKey="0">
+            <Accordion.Item eventKey="0">
+              <Accordion.Header className = "d-flex align-items-center">
+                <Image src = {Enova} style = {{width: "1.5rem"}} rounded/>&nbsp; 
+                <p className = "m-0 p-0"> Enova International - Strategy & Operations Intern </p>
+              </Accordion.Header>
+              <Accordion.Body>
+                <h6 className = "p-0 m-0"> Summer 2020 </h6> 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I worked at Enova International as the sole S&O intern with a focus
+                on <mark>product launch strategy.</mark>
+                Collaborating with various stakeholders in many departments, <mark>I lead</mark> feature ideation 
+                and prioritization for Headway Capital Account Home. Headway Capital is Enova's main small business lending 
+                branch and Account Home is similar to any Bank app's home page: you're able to see your current balance, how much you owe, etc.
+                <mark>I ended up shipping a feature</mark> called "Draw Cost Configurator." 
+                <br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The main problem people have when dealing with any type of loan is transparency and clarity. The Draw Cost Configurator
+                sought to fix this problem by allowing customers to toggle their loan details such as draw amount, term length, payment amount, and payment frequency 
+                and, most importantly, visualize that contract. One of the biggest takeaways I learned is that while business owners
+                are really good at what they do, they almost always are very unfamiliar with both their own finances and financial contracts.
+                <br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This tool effectively<mark>increased trust between Enova</mark> and its existing customers, 
+                <mark>decreased the number of defaults on loans.</mark> This feature gave Enova a<mark>huge competitive advantage</mark>
+                over its competitors by giving customers so much more freedom and insight into what 
+                they were signing. 
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="1">
+            <Accordion.Header className = "d-flex align-items-center">
+                <Image src = {Principal} style = {{width: "1.5rem"}} rounded/>&nbsp; 
+                <p className ="p-0 m-0"> Principal Financial Group - Data Science Intern</p> 
+            </Accordion.Header>              
+            <Accordion.Body>
+                <h6 className = "p-0 m-0"> Summer 2019 </h6> 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At Principal, I was hired as a Data Science Intern with <mark>little to no coding experience.</mark>
+                It was extremely stressful at the time since each concept was so difficult for me to learn
+                and grasp. However, the experience really shaped me and taught 
+                me the importance of having a strong technical background. 
+                I'm really proud looking back because in <mark>3 months</mark> I had taught myself how to use <mark> Python, pandas, numpy, SQL for data manipulation</mark> and an ounce of <mark>Power BI to visualize that data.</mark> 
+                <br/> 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                I had a few main tasks throughout the summer. One of the first things I did was understand, 
+                discuss, and condense a lot of the database infrastructure for the Fixed Income group at Principal. 
+                I also effectively increased loading speed by moving a lot of 
+                unnecessary Power BI calculations/transformations to the backend (SQL).
+                However, I think the most difficult part of the internship was ensuring 
+                data calculation accuracy. In the beginning of the internship, our data calculations were <mark> only 70% accurate</mark> when comparing to the source of truth. In reality, these were pretty simple calculations
+                that were being done and pushed to Power BI. So the main question 
+                posed was the following: <mark>why were our backend calculations not matching 
+                up with the source of truth?</mark> 
+                My intern team spent everyday doing deep investigation into underlying data
+                and understanding why certain calculations were wrong. There were so many reasons: 
+                sometimes data was incomplete, sometimes joining multiple tables could cause issues, 
+                there could be duplicate data, etc. Through this tedious and difficult process, 
+                I gained a lot of confidence manipulating, wielding, and investigating data.
+                In the very last week of our internship, we raised the accuracy to 100%. 
+                We honestly never thought we were going to get there because sometimes it would take days to 
+                just raise the accuracy by a mere percent. I learned a lot of things from this internship
+                that I was really grateful for. 
+                <mark>But most importantly,</mark> 
+                I became a lot better at engaging with stakeholders and <mark>concisely 
+                communicating technical concepts and problems in a simple way.</mark> 
+
+              </Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
+
           <h3 id = "projects" className = "mt-3"> <FaClipboardCheck/> Projects </h3> 
           <p class> I enjoy working on a variety of projects both academic and some for fun. Here are a few examples:</p> 
           <Container> 
@@ -127,45 +196,7 @@ return (
               </Col>
             </Row>
           </Container> 
-          <h3 id = "work_experience" className = "mt-3"> <MdWork/> Work Experience </h3> 
-          <p> My work experience spans across data science, strategy & operations, and product management.  </p> 
-
-          <Accordion defaultActiveKey="0">
-            <Accordion.Item eventKey="0">
-              <Accordion.Header className = "d-flex align-items-center">
-                <Image src = {Enova} style = {{width: "1.5rem"}} rounded/>&nbsp; 
-                <p className = "m-0 p-0"> Enova International - Strategy & Operations Intern </p>
-              </Accordion.Header>
-              <Accordion.Body>
-                <h6 className = "p-0 m-0"> Summer 2020 </h6> 
-                I worked at Enova International as the sole S&O intern with a focus
-                on <mark>product launch strategy.</mark>
-                Collaborating with various stakeholders in many departments, <mark>I lead</mark> feature ideation 
-                and prioritization for Headway Capital Account Home. Headway Capital is Enova's main small business lending 
-                branch and Account Home is similar to any Bank app's home page: you're able to see your current balance, how much you owe, etc.
-                <mark>I ended up shipping a feature</mark> called "Draw Cost Configurator." The main problem 
-                customers have in any loaning space is transparency and clarity. The Draw Cost Configurator
-                sought to fix this problem by allowing customers to toggle their loan details such as draw amount, term length, payment amount, and payment frequency 
-                and, most importantly, visualize that contract. One of the biggest takeaways I learned is that while business owners
-                are really good at what they do, they almost always are very unfamiliar with both their own finances and financial contracts.
-                This tool effectively<mark>increased trust between Enova</mark> and its existing customers, 
-                <mark>decreased the number of defaults on loans.</mark> This feature gave Enova a<mark>huge competitive advantage</mark>
-                over its competitors by giving customers so much more freedom and insight into what 
-                they were signing. 
-              </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item eventKey="1">
-            <Accordion.Header className = "d-flex align-items-center">
-                <Image src = {Principal} style = {{width: "1.5rem"}} rounded/>&nbsp; 
-                <p className ="p-0 m-0"> Principal Financial Group - Data Science Intern</p> 
-            </Accordion.Header>              
-            <Accordion.Body>
-                <h6 className = "p-0 m-0"> Summer 2019 </h6> 
-
-              </Accordion.Body>
-            </Accordion.Item>
-          </Accordion>
-
+          
 
 
           <h3 id = "recommendations" className = "mt-3"> <BsPeopleFill/> Recommendations  </h3> 
