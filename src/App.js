@@ -80,15 +80,15 @@ return (
                 Collaborating with various stakeholders in many departments, <mark>I lead</mark> feature ideation 
                 and prioritization for Headway Capital Account Home. Headway Capital is Enova's main small business lending 
                 branch and Account Home is similar to any Bank app's home page: you're able to see your current balance, how much you owe, etc.
-                <mark>I ended up shipping a feature</mark> called "Draw Cost Configurator." 
+                <mark> I ended up shipping a feature</mark> called "Draw Cost Configurator." 
                 <br/>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The main problem people have when dealing with any type of loan is transparency and clarity. The Draw Cost Configurator
                 sought to fix this problem by allowing customers to toggle their loan details such as draw amount, term length, payment amount, and payment frequency 
                 and, most importantly, visualize that contract. One of the biggest takeaways I learned is that while business owners
                 are really good at what they do, they almost always are very unfamiliar with both their own finances and financial contracts.
                 <br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This tool effectively<mark>increased trust between Enova</mark> and its existing customers, 
-                <mark>decreased the number of defaults on loans.</mark> This feature gave Enova a<mark>huge competitive advantage</mark>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This tool effectively<mark> increased trust between Enova</mark> and its existing customers, 
+                <mark> decreased the number of defaults on loans.</mark> This feature gave Enova a <mark>huge competitive advantage </mark>
                 over its competitors by giving customers so much more freedom and insight into what 
                 they were signing. 
               </Accordion.Body>
@@ -101,7 +101,7 @@ return (
             <Accordion.Body>
                 <h6 className = "p-0 m-0"> Summer 2019 </h6> 
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At Principal, I was hired as a Data Science Intern with <mark>little to no coding experience.</mark>
-                It was extremely stressful at the time since each concept was so difficult for me to learn
+                &nbsp;It was extremely stressful at the time since each concept was so difficult for me to learn
                 and grasp. However, the experience really shaped me and taught 
                 me the importance of having a strong technical background. 
                 I'm really proud looking back because in <mark>3 months</mark> I had taught myself how to use <mark> Python, pandas, numpy, SQL for data manipulation</mark> and an ounce of <mark>Power BI to visualize that data.</mark> 
@@ -115,7 +115,7 @@ return (
                 data calculation accuracy. In the beginning of the internship, our data calculations were <mark> only 70% accurate</mark> when comparing to the source of truth. In reality, these were pretty simple calculations
                 that were being done and pushed to Power BI. So the main question 
                 posed was the following: <mark>why were our backend calculations not matching 
-                up with the source of truth?</mark> 
+                up with the source of truth? </mark> 
                 My intern team spent everyday doing deep investigation into underlying data
                 and understanding why certain calculations were wrong. There were so many reasons: 
                 sometimes data was incomplete, sometimes joining multiple tables could cause issues, 
@@ -125,7 +125,7 @@ return (
                 We honestly never thought we were going to get there because sometimes it would take days to 
                 just raise the accuracy by a mere percent. I learned a lot of things from this internship
                 that I was really grateful for. 
-                <mark>But most importantly,</mark> 
+                <mark> But most importantly, </mark> 
                 I became a lot better at engaging with stakeholders and <mark>concisely 
                 communicating technical concepts and problems in a simple way.</mark> 
 
