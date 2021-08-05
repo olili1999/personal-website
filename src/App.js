@@ -12,20 +12,21 @@ import { IoDocumentTextSharp } from "react-icons/io5";
 import Umich from "./UMich.png"; 
 import Enova from "./enova-logo.png"; 
 import Principal from "./principal.png"; 
+import BT from "./BT.png";
 // https://faiizii992.medium.com/creating-a-navbar-using-react-router-dom-and-react-bootstrap-react-router-bootstrap-e6b59015a5ec
 
 function App() {
 return (
 <div className="App">
     {/* <Router> */}
-    <NavigationBar></NavigationBar>
+    <div style = {{position: "sticky", top: 0, zIndex: 1000}}> <NavigationBar ></NavigationBar></div>
 
     <Container fluid> 
+
       <Row style = {{height: "100%"}}> 
 
         {/* Big Outer Column #1 */}
-         {/* position: "sticky", top: "0px" in Col below*/}
-        <Col xs = {12} sm = {12} md ={3} style = {{height: "100%"}} className = "d-flex justify-content-center"> 
+        <Col xs = {12} sm = {12} md ={3} style = {{height: "100%", position: "sticky", top: "50px"}} className = "d-flex justify-content-center"> 
           <Card className = "mt-4" style={{width: '20rem'}}>
           <OverlayTrigger placement ="bottom" overlay={<Tooltip> Me, at the Sleeping Bear Dunes in Michigan!</Tooltip>}>
             <Card.Img src= {headshot_outside}/>
@@ -77,7 +78,7 @@ return (
                 <h6 className = "p-0 m-0"> Summer 2020 </h6> 
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I worked at Enova International as the sole S&O intern with a focus
                 on <mark>product launch strategy.</mark>
-                Collaborating with various stakeholders in many departments, <mark>I lead</mark> feature ideation 
+                &nbsp;Collaborating with various stakeholders in many departments, <mark>I lead</mark> feature ideation 
                 and prioritization for Headway Capital Account Home. Headway Capital is Enova's main small business lending 
                 branch and Account Home is similar to any Bank app's home page: you're able to see your current balance, how much you owe, etc.
                 <mark> I ended up shipping a feature</mark> called "Draw Cost Configurator." 
@@ -166,7 +167,7 @@ return (
                   </ListGroup>
                 </Card>
               </Col>
-              <Col xs = {6} sm = {6} md = {6} lg = {6}>
+              <Col sm = {12} md = {6} lg = {6}>
                 <Card className = "bob-on-hover mt-3" border style={{ width: '18rem' }}>
                     <Card.Body>
                       <Card.Title> 🔧 Detroit Manufacturing Systems </Card.Title>
