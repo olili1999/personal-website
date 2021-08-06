@@ -13,6 +13,9 @@ import Umich from "./UMich.png";
 import Enova from "./enova-logo.png"; 
 import Principal from "./principal.png"; 
 import BT from "./BT.png";
+import {Twemoji} from "react-emoji-render";
+ 
+
 // https://faiizii992.medium.com/creating-a-navbar-using-react-router-dom-and-react-bootstrap-react-router-bootstrap-e6b59015a5ec
 
 function App() {
@@ -44,12 +47,30 @@ return (
               </Card.Text>
             </Card.Body>
           <ListGroup className="list-group-flush">
-            <ListGroupItem><FaMapMarker/> Ann Arbor, MI</ListGroupItem>
+            <ListGroupItem><FaMapMarker/> Ann Arbor, MI &nbsp;| &nbsp;
+             
+              <OverlayTrigger placement ="bottom" overlay={<Tooltip> Recently got into rock climbing, but I absolutely love it</Tooltip>}>
+                <span style = {{display: ""}} className = "m-0 p-0"><Twemoji text = "🧗‍♂️"/></span>
+              </OverlayTrigger> &nbsp;
+
+              <OverlayTrigger placement ="bottom" overlay={<Tooltip> Club Tennis :)</Tooltip>}>
+                <span style = {{display: ""}} className = "m-0 p-0"><Twemoji text = "🎾"/></span>
+              </OverlayTrigger> &nbsp;            
+              <OverlayTrigger placement ="bottom" overlay={<Tooltip> Web Dev & Design</Tooltip>}>
+                <span style = {{display: ""}} className = "m-0 p-0"><Twemoji text = "💻"/></span>
+              </OverlayTrigger> &nbsp;  
+              <OverlayTrigger placement ="bottom" overlay={<Tooltip> Guitar</Tooltip>}>
+                <span style = {{display: ""}} className = "m-0 p-0"><Twemoji text = "🎸"/></span>
+              </OverlayTrigger> &nbsp;  
+              
+            </ListGroupItem>
+
+
+
             <ListGroupItem><MdEmail/> <a style ={{textDecoration: 'none'}} target = "_blank" href ="mailto:olili@umich.edu">E-mail</a> </ListGroupItem>
             <ListGroupItem><IoLogoLinkedin />&nbsp;<a style ={{textDecoration: 'none'}} target = "_blank" href = "https://www.linkedin.com/in/oliver-y-li/">LinkedIn</a></ListGroupItem>
             <ListGroupItem><FaGithub/>&nbsp;<a style ={{textDecoration: 'none'}} target = "_blank"  href ="https://github.com/olili1999">GitHub</a> </ListGroupItem>
             <ListGroupItem><IoDocumentTextSharp/> <a style ={{textDecoration: 'none'}} target = "_blank" href ="https://drive.google.com/file/d/1C3zs45lwpNLw_OIpEd0m0-eV_YEVSUo_/view?usp=sharing">Resume</a> </ListGroupItem>
-
           </ListGroup>
           </Card>
 
@@ -58,7 +79,7 @@ return (
         <Col className = "d-flex flex-column" xs = {12} sm = {12} md = {9} style = {{}}>
 
           <h3 id = "about" className = "mt-3"> <BsPersonLinesFill/> About Me </h3> 
-          <p class> Hey, nice to meet you! I'm Oliver, a tennis player, rock climber, programmer, designer, and student at the University of Michigan. Throughout college, I was pretty clueless about what I wanted to do it upon myself to try anything and everything. Over time, I found my initial home in <a style ={{textDecoration: 'none'}}  target= "_blank" href ="https://ioe.engin.umich.edu/">IOE, where I learned that I enjoy streamlining frustratingly inefficient processes</a>. 
+          <p className = "p-0 m-0"> Hey, nice to meet you! I'm Oliver, a tennis player, rock climber, programmer, designer, and student at the University of Michigan. Throughout college, I was pretty clueless about what I wanted to do it upon myself to try anything and everything. Over time, I found my initial home in <a style ={{textDecoration: 'none'}}  target= "_blank" href ="https://ioe.engin.umich.edu/">IOE, where I learned that I enjoy streamlining frustratingly inefficient processes</a>. 
           After my sophomore year, I did a data science internship at Principal Financial Group, where I learned that I love creating 
           accessible and intuitive user experiences and making data-driven decisions.  <a style ={{textDecoration: 'none'}}  target= "_blank" href = "https://www.si.umich.edu/about-umsi"> I then decided to take on an additional major through the School of Information in Applied Data Science & User Experience Design. 
           </a> After gaining some rudimentary programming skills, I realized it was crucial to have a solid foundation in computer science to have an understanding of core engineering principles so that I could build products from the ground up myself.  <a target = "_blank" style ={{textDecoration: 'none'}} href = "https://cse.engin.umich.edu/"> Somehow, I also managed to tack on a minor in computer science with a concentration in User Interface Design. </a>
@@ -70,13 +91,37 @@ return (
 
 {/*  defaultActiveKey="0" */}
           <Accordion>
-            <Accordion.Item eventKey="0">
+            <Accordion.Item eventKey="0" >
               <Accordion.Header className = "d-flex align-items-center">
-                <Image src = {Enova} style = {{width: "1.5rem"}} rounded/>&nbsp; 
-                <p className = "m-0 p-0"> Enova International - Strategy & Operations Intern </p>
+                <Image src = {BT} style = {{width: "1.5rem"}} rounded/>&nbsp; 
+                <p className = "m-0 p-0"> Belvedere Trading - Product Analyst Intern (Summer 2021) </p>
               </Accordion.Header>
               <Accordion.Body>
-                <h6 className = "p-0 m-0"> Summer 2020 </h6> 
+                <h6 className = "p-0 m-0"> <FaMapMarker/>&nbsp;Chicago, IL (Remote) </h6> 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At Belvedere, I worked as a product analyst intern. The first 6 weeks of our internship were 
+                spent in Belvedere Trading University (BTU), where we took classes on the basics of <mark>market making</mark>, <market>core options theory</market>, basic dev environments, and internal belvedere systems. Alongside our rigorous courses in BTU, we shadowed across all the different products 
+                and year-long initiatives across the company. Throughout our shadows, we were assigned work to complete across every stage of the product management lifecycle. We worked with several different end users, from traders (the most common of course), accounts, clerks, and risk managers to define 
+                and clarify business requirements for feature requests, helped to guide software engineers with implementation, performed functional reviews of that code, and finally ensured rollout of features was successful and safe with A/B testing across different teams. 
+                <br/> 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One of my favorite parts of the summer was the week long <mark> intern hackathon.</mark> We got to experience an intense and condensed version of the whole product management lifecycle. We ended up creating a web app that simulates a live
+                trading environment with performance metrics for candidates, allowing Belvedere to make more data-driven decisions on hiring future candidates. This was a super cool project because it was one of the projects that was fully implemented by my team and is <mark> actually going to be used this upcoming recruiting cycle.</mark> For this project, I acted as product manager by making sure the business requirements we laid out beforehand were implemented and also contributed
+                by creating the frontend interface. 
+                <br/> 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Another hefty chunk of my time was spent in <mark> Splunk</mark>, a hybrid query language that allows you to easily generate visualizations and large scale dashboards. I spearheaded a Splunk dashboard that allowed stakeholders (Product, Traders, Support) to more easily investigate and understand the reasoning behind the decisions of one of Belvedere's autofitting algorithms. I finished the project half way through the internship and it ended up <mark> saving stakeholders an estimated 10 hrs/week total.</mark>&nbsp;
+                In the latter half of the internship, I worked on revamping one of Belvedere's open interest dashboards. <mark>Open interest</mark> is the concept of how many total contracts are out in the market at the end of a trading day. This dashboard was helpful for traders to have a high level view of the marketand also know how much of that market Belvedere captures. In the old dashboard, the problem was the values for different days 
+                were being aggregated into one. However, this doesn't really help when looking at Open Interest because you want to see how it changes per trading day. The main contribution I had was to <mark> change the data aggregation</mark> to be at a more <mark> granular level </mark>and I also corrected some calculation errors to <mark>gain trust</mark> from traders to use the product. 
+
+                </Accordion.Body>
+
+            </Accordion.Item>
+
+             <Accordion.Item eventKey="1">
+              <Accordion.Header className = "d-flex align-items-center">
+                <Image src = {Enova} style = {{width: "1.5rem"}} rounded/>&nbsp; 
+                <p className = "m-0 p-0"> Enova International - Strategy & Operations Intern (Summer 2020) </p>
+              </Accordion.Header>
+              <Accordion.Body>
+                <h6 className = "p-0 m-0"> <FaMapMarker/>&nbsp;Chicago, IL (Remote) </h6> 
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I worked at Enova International as the sole S&O intern with a focus
                 on <mark>product launch strategy.</mark>
                 &nbsp;Collaborating with various stakeholders in many departments, <mark>I lead</mark> feature ideation 
@@ -95,13 +140,13 @@ return (
                 they were signing. 
               </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="1">
+            <Accordion.Item eventKey="2">
             <Accordion.Header className = "d-flex align-items-center">
                 <Image src = {Principal} style = {{width: "1.5rem"}} rounded/>&nbsp; 
-                <p className ="p-0 m-0"> Principal Financial Group - Data Science Intern</p> 
+                <p className ="p-0 m-0"> Principal Financial Group - Data Science Intern (Summer 2019)</p> 
             </Accordion.Header>              
             <Accordion.Body>
-                <h6 className = "p-0 m-0"> Summer 2019 </h6> 
+                <h6 className = "p-0 m-0"> <FaMapMarker/>&nbsp; Des Moines, Iowa </h6> 
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At Principal, I was hired as a Data Science Intern with <mark>little to no coding experience.</mark>
                 &nbsp;It was extremely stressful at the time since each concept was so difficult for me to learn
                 and grasp. However, the experience really shaped me and taught 
@@ -139,7 +184,7 @@ return (
           <p class> I enjoy working on a variety of projects both academic and some for fun. Here are a few examples:</p> 
           <Container> 
             <Row> 
-              <Col sm = {12} md = {6} lg = {6}> 
+              <Col className = "center-cards" sm = {12} md = {6} lg = {6}> 
                 <Card className = "bob-on-hover mt-3 mr-3" border style={{ width: '18rem' }}>
                     <Card.Body>
                       <Card.Title>🍕 Discord Pizza Bot </Card.Title>
@@ -153,7 +198,7 @@ return (
                   </ListGroup>
                 </Card>
               </Col> 
-              <Col sm = {12} md = {6} lg = {6}> 
+              <Col className = "center-cards" sm = {12} md = {6} lg = {6}> 
                 <Card className = "bob-on-hover mt-3" border style={{ width: '18rem' }}>
                     <Card.Body>
                       <Card.Title>🎾 Tennis Friends </Card.Title>
@@ -168,7 +213,7 @@ return (
                   </ListGroup>
                 </Card>
               </Col>
-              <Col sm = {12} md = {6} lg = {6}>
+              <Col className = "center-cards" sm = {12} md = {6} lg = {6}>
                 <Card className = "bob-on-hover mt-3" border style={{ width: '18rem' }}>
                     <Card.Body>
                       <Card.Title> 🔧 Detroit Manufacturing Systems </Card.Title>
@@ -182,7 +227,7 @@ return (
                     </ListGroup>
                 </Card>
               </Col> 
-              <Col sm = {12} md = {6} lg = {6}>  
+              <Col className = "center-cards" sm = {12} md = {6} lg = {6}>  
                 <Card className = "bob-on-hover mt-3" border style={{ width: '18rem' }}>
                     <Card.Body>
                       <Card.Title> 📄 Cover Letter Generator</Card.Title>

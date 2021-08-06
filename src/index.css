@@ -14,13 +14,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
+/* MID SCREENS */
 @media screen and (max-width: 769px){ 
   html { 
     scroll-padding-top: 37.5vw !important;
   }
-
+  .center-cards{ 
+    display: flex;
+    justify-content: center; 
+  }
 }
 
+/* SMALLER SCREENS */
 @media screen and (max-width: 450px){ 
   html { 
     scroll-padding-top: 73vw !important;
@@ -35,6 +42,7 @@ body {
 
 } */
 
+/* NORMAL/BIGGER SCREENS */
 @media screen and (min-width: 770px) and (max-width: 2000px){
   .stickyClass{ 
     top: 50px !important; 
