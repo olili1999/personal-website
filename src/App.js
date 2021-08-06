@@ -49,7 +49,7 @@ return (
           <ListGroup className="list-group-flush">
             <ListGroupItem><FaMapMarker/> Ann Arbor, MI &nbsp;| &nbsp;
              
-              <OverlayTrigger placement ="bottom" overlay={<Tooltip> Recently got into rock climbing, but I absolutely love it</Tooltip>}>
+              <OverlayTrigger placement ="bottom" overlay={<Tooltip> Recently got into rock climbing, but I fell in love with it.</Tooltip>}>
                 <span style = {{display: ""}} className = "m-0 p-0"><Twemoji text = "🧗‍♂️"/></span>
               </OverlayTrigger> &nbsp;
 
@@ -79,7 +79,7 @@ return (
         <Col className = "d-flex flex-column" xs = {12} sm = {12} md = {9} style = {{}}>
 
           <h3 id = "about" className = "mt-3"> <BsPersonLinesFill/> About Me </h3> 
-          <p className = "p-0 m-0"> Hey, nice to meet you! I'm Oliver, a tennis player, rock climber, programmer, designer, and student at the University of Michigan. Throughout college, I was pretty clueless about what I wanted to do it upon myself to try anything and everything. Over time, I found my initial home in <a style ={{textDecoration: 'none'}}  target= "_blank" href ="https://ioe.engin.umich.edu/">IOE, where I learned that I enjoy streamlining frustratingly inefficient processes</a>. 
+          <p className = "p-0 m-0"> Hey, nice to meet you! I'm Oliver, a tennis player, rock climber, programmer, designer, and student at the University of Michigan. Throughout college, I was pretty clueless about what I wanted to do. I took it upon myself to try anything and everything. Over time, I found my initial home in <a style ={{textDecoration: 'none'}}  target= "_blank" href ="https://ioe.engin.umich.edu/">IOE, where I learned that I enjoy streamlining frustratingly inefficient processes</a>. 
           After my sophomore year, I did a data science internship at Principal Financial Group, where I learned that I love creating 
           accessible and intuitive user experiences and making data-driven decisions.  <a style ={{textDecoration: 'none'}}  target= "_blank" href = "https://www.si.umich.edu/about-umsi"> I then decided to take on an additional major through the School of Information in Applied Data Science & User Experience Design. 
           </a> After gaining some rudimentary programming skills, I realized it was crucial to have a solid foundation in computer science to have an understanding of core engineering principles so that I could build products from the ground up myself.  <a target = "_blank" style ={{textDecoration: 'none'}} href = "https://cse.engin.umich.edu/"> Somehow, I also managed to tack on a minor in computer science with a concentration in User Interface Design. </a>
@@ -100,7 +100,7 @@ return (
                 <h6 className = "p-0 m-0"> <FaMapMarker/>&nbsp;Chicago, IL (Remote) </h6> 
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At Belvedere, I worked as a product analyst intern. The first 6 weeks of our internship were 
                 spent in Belvedere Trading University (BTU), where we took classes on the basics of <mark>market making</mark>, <market>core options theory</market>, basic dev environments, and internal belvedere systems. Alongside our rigorous courses in BTU, we shadowed across all the different products 
-                and year-long initiatives across the company. Throughout our shadows, we were assigned work to complete across every stage of the product management lifecycle. We worked with several different end users, from traders (the most common of course), accounts, clerks, and risk managers to define 
+                and year-long initiatives across the company. Throughout our shadows, we were assigned work to complete across every stage of the <mark> product management lifecycle.</mark> We worked with several different end users, from traders (the most common of course), accounts, clerks, and risk managers to define 
                 and clarify business requirements for feature requests, helped to guide software engineers with implementation, performed functional reviews of that code, and finally ensured rollout of features was successful and safe with A/B testing across different teams. 
                 <br/> 
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One of my favorite parts of the summer was the week long <mark> intern hackathon.</mark> We got to experience an intense and condensed version of the whole product management lifecycle. We ended up creating a web app that simulates a live
