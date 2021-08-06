@@ -1,7 +1,7 @@
 html { 
   scroll-behavior: smooth; 
   /* https://stackoverflow.com/questions/15726795/offsetting-anchor-links-with-fixed-header */
-  scroll-padding-top: 6vw;
+  scroll-padding-top: 5vw;
 }
 
 

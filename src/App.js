@@ -56,6 +56,7 @@ return (
         </Col>
         {/* Big Outer Column #2 */}
         <Col className = "d-flex flex-column" xs = {12} sm = {12} md = {9} style = {{}}>
+
           <h3 id = "about" className = "mt-3"> <BsPersonLinesFill/> About Me </h3> 
           <p class> Hey, nice to meet you! I'm Oliver, a tennis player, rock climber, programmer, designer, and student at the University of Michigan. Throughout college, I was pretty clueless about what I wanted to do it upon myself to try anything and everything. Over time, I found my initial home in <a style ={{textDecoration: 'none'}}  target= "_blank" href ="https://ioe.engin.umich.edu/">IOE, where I learned that I enjoy streamlining frustratingly inefficient processes</a>. 
           After my sophomore year, I did a data science internship at Principal Financial Group, where I learned that I love creating 
