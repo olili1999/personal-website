@@ -1,7 +1,7 @@
 html { 
   scroll-behavior: smooth; 
   /* https://stackoverflow.com/questions/15726795/offsetting-anchor-links-with-fixed-header */
-  scroll-padding-top: 6vw; 
+  scroll-padding-top: 6vw;
 }
 
 
@@ -13,21 +13,27 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-:target::before {
-  content: '';
-  display: block;
-  height:      180px;
-  margin-top: -180px;
-}
 
-
-@media screen and (max-width: 770px){ 
+@media screen and (max-width: 769px){ 
   html { 
-    scroll-padding-top: 55vw !important;
-  
+    scroll-padding-top: 37.5vw !important;
   }
-  
+
 }
+
+@media screen and (max-width: 450px){ 
+  html { 
+    scroll-padding-top: 73vw !important;
+  }
+
+}
+/* 
+@media screen (min-width: 451px) and (max-width: 675px){ 
+  html { 
+    scroll-padding-top: 1000px !important;
+  }
+
+} */
 
 @media screen and (min-width: 770px) and (max-width: 2000px){
   .stickyClass{ 
