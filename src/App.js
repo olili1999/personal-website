@@ -26,7 +26,7 @@ return (
       <Row style = {{height: "100%"}}> 
 
         {/* Big Outer Column #1 */}
-        <Col xs = {12} sm = {12} md ={3} style = {{height: "100%", position: "sticky", top: "50px"}} className = "d-flex justify-content-center"> 
+        <Col xs = {12} sm = {12} md ={3} style = {{height: "100%"}} className = "stickyClass d-flex justify-content-center"> 
           <Card className = "mt-4" style={{width: '20rem'}}>
           <OverlayTrigger placement ="bottom" overlay={<Tooltip> Me, at the Sleeping Bear Dunes in Michigan!</Tooltip>}>
             <Card.Img src= {headshot_outside}/>
@@ -56,7 +56,6 @@ return (
         </Col>
         {/* Big Outer Column #2 */}
         <Col className = "d-flex flex-column" xs = {12} sm = {12} md = {9} style = {{}}>
-        
           <h3 id = "about" className = "mt-3"> <BsPersonLinesFill/> About Me </h3> 
           <p class> Hey, nice to meet you! I'm Oliver, a tennis player, rock climber, programmer, designer, and student at the University of Michigan. Throughout college, I was pretty clueless about what I wanted to do it upon myself to try anything and everything. Over time, I found my initial home in <a style ={{textDecoration: 'none'}}  target= "_blank" href ="https://ioe.engin.umich.edu/">IOE, where I learned that I enjoy streamlining frustratingly inefficient processes</a>. 
           After my sophomore year, I did a data science internship at Principal Financial Group, where I learned that I love creating 
@@ -68,7 +67,8 @@ return (
           <h3 id = "work_experience" className = "mt-3"> <MdWork/> Work Experience </h3> 
           <p> My work experience spans across data science, strategy & operations, and product management.  </p> 
 
-          <Accordion defaultActiveKey="0">
+{/*  defaultActiveKey="0" */}
+          <Accordion>
             <Accordion.Item eventKey="0">
               <Accordion.Header className = "d-flex align-items-center">
                 <Image src = {Enova} style = {{width: "1.5rem"}} rounded/>&nbsp; 
