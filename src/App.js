@@ -4,21 +4,29 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import headshot_outside from './headshot_outside.jpg'
 import { FaMapMarker, FaGithub, FaClipboardCheck} from "react-icons/fa";
-import {Card, Row, Col, Button, ListGroupItem, ListGroup, Container, Image, OverlayTrigger, Tooltip, Accordion} from 'react-bootstrap';
+import {Card, Row, Col, Button, ListGroupItem, ListGroup, Container, Image, OverlayTrigger, Tooltip, Accordion, ProgressBar} from 'react-bootstrap';
 import { BsPersonLinesFill, BsPeopleFill} from "react-icons/bs";
 import {MdWork, MdEmail} from "react-icons/md"; 
 import {IoLogoLinkedin} from "react-icons/io";
 import { IoDocumentTextSharp } from "react-icons/io5";
+import {GiProgression} from "react-icons/gi";
+
 import Umich from "./UMich.png"; 
 import Enova from "./enova-logo.png"; 
 import Principal from "./principal.png"; 
 import BT from "./BT.png";
 import {Twemoji} from "react-emoji-render";
- 
+import React, { useState, useEffect } from 'react';
+
+
+
 
 // https://faiizii992.medium.com/creating-a-navbar-using-react-router-dom-and-react-bootstrap-react-router-bootstrap-e6b59015a5ec
 
 function App() {
+
+
+
 return (
 <div className="App">
     {/* <Router> */}
@@ -30,7 +38,7 @@ return (
 
         {/* Big Outer Column #1 */}
         <Col xs = {12} sm = {12} md ={3} style = {{height: "100%"}} className = "stickyClass d-flex justify-content-center"> 
-          <Card className = "mt-4" style={{width: '20rem'}}>
+          <Card className = "box-shadow mt-4" style={{width: '20rem'}}>
           <OverlayTrigger placement ="bottom" overlay={<Tooltip> Me, at the Sleeping Bear Dunes in Michigan!</Tooltip>}>
             <Card.Img src= {headshot_outside}/>
           </OverlayTrigger>
@@ -49,7 +57,7 @@ return (
           <ListGroup className="list-group-flush">
             <ListGroupItem><FaMapMarker/> Ann Arbor, MI &nbsp;| &nbsp;
              
-              <OverlayTrigger placement ="bottom" overlay={<Tooltip> Recently got into rock climbing, but I fell in love with it.</Tooltip>}>
+              <OverlayTrigger placement ="bottom" overlay={<Tooltip> Recently got into rock climbing & I really like it!</Tooltip>}>
                 <span style = {{display: ""}} className = "m-0 p-0"><Twemoji text = "🧗‍♂️"/></span>
               </OverlayTrigger> &nbsp;
 
@@ -79,18 +87,53 @@ return (
         <Col className = "d-flex flex-column" xs = {12} sm = {12} md = {9} style = {{}}>
 
           <h3 id = "about" className = "mt-3"> <BsPersonLinesFill/> About Me </h3> 
-          <p className = "p-0 m-0"> Hey, nice to meet you! I'm Oliver, a tennis player, rock climber, programmer, designer, and student at the University of Michigan. Throughout college, I was pretty clueless about what I wanted to do. I took it upon myself to try anything and everything. Over time, I found my initial home in <a style ={{textDecoration: 'none'}}  target= "_blank" href ="https://ioe.engin.umich.edu/">IOE, where I learned that I enjoy streamlining frustratingly inefficient processes</a>. 
-          After my sophomore year, I did a data science internship at Principal Financial Group, where I learned that I love creating 
-          accessible and intuitive user experiences and making data-driven decisions.  <a style ={{textDecoration: 'none'}}  target= "_blank" href = "https://www.si.umich.edu/about-umsi"> I then decided to take on an additional major through the School of Information in Applied Data Science & User Experience Design. 
-          </a> After gaining some rudimentary programming skills, I realized it was crucial to have a solid foundation in computer science to have an understanding of core engineering principles so that I could build products from the ground up myself.  <a target = "_blank" style ={{textDecoration: 'none'}} href = "https://cse.engin.umich.edu/"> Somehow, I also managed to tack on a minor in computer science with a concentration in User Interface Design. </a>
-          <br/>
-          My interdisciplinary studies in engineering, business, and design have lead me to be really interested in a career in 
-          product management/operations/analytics roles. </p> 
-          <h3 id = "work_experience" className = "mt-3"> <MdWork/> Work Experience </h3> 
+          <p className = "p-0 m-0"> Hey, nice to meet you! I'm Oliver, a tennis player, rock climber, programmer, designer, and student at the University of Michigan. </p> 
+          <h3 id = "skills" className = "mt-4 mb-4"> <GiProgression/> Skills </h3> 
+
+
+          <div className = "d-flex flex-column align-items-center">
+            <div className ="barContainer mb-4"> 
+              <div className = "d-flex justify-content-between bar"> 
+                <p className = "m-0 p-0 float-left">Python</p>
+                <p className = "m-0 p-0 float-right">90%</p>
+              </div>
+              <ProgressBar variant="info" min = "0" max = "100" now = "90" className = "bar"/>
+            </div>
+            <div className ="barContainer mb-4"> 
+              <div className = "d-flex justify-content-between bar"> 
+                <p className = "m-0 p-0 float-left">Querying Languages (SQL, Splunk)</p>
+                <p className = "m-0 p-0 float-right">75%</p>
+              </div>
+              <ProgressBar variant="primary" min = "0" max = "100" now = "75" className = "bar"/>
+            </div>
+            <div className ="barContainer mb-4"> 
+              <div className = "d-flex justify-content-between bar"> 
+                <p className = "m-0 p-0 float-left">React.js</p>
+                <p className = "m-0 p-0 float-right">40%</p>
+              </div>
+              <ProgressBar variant="success" min = "0" max = "100" now = "40" className = "bar"/>
+            </div>
+            <div className ="barContainer mb-4"> 
+              <div className = "d-flex justify-content-between bar"> 
+                <p className = "m-0 p-0 float-left">C++</p>
+                <p className = "m-0 p-0 float-right">60%</p>
+              </div>
+              <ProgressBar variant="warning" min = "0" max = "100" now = "60" className = "bar"/>
+            </div>
+            <div className ="barContainer mb-4"> 
+              <div className = "d-flex justify-content-between bar"> 
+                <p className = "m-0 p-0 float-left">UI/UX Design (Figma, Wireframing & Prototyping)</p>
+                <p className = "m-0 p-0 float-right">85%</p>
+              </div>
+              <ProgressBar variant="danger" min = "0" max = "100" now = "85" className = "bar"/>
+            </div>
+          </div>
+          <h3 id = "work_experience" className = "mt-5"> <MdWork/> Work Experience </h3> 
           <p> My work experience spans across data science, strategy & operations, and product management.  </p> 
 
+
 {/*  defaultActiveKey="0" */}
-          <Accordion>
+          <Accordion className = "mb-5">
             <Accordion.Item eventKey="0" >
               <Accordion.Header className = "d-flex align-items-center">
                 <Image src = {BT} style = {{width: "1.5rem"}} rounded/>&nbsp; 
@@ -180,12 +223,14 @@ return (
             </Accordion.Item>
           </Accordion>
 
-          <h3 id = "projects" className = "mt-3"> <FaClipboardCheck/> Projects </h3> 
+
+
+          <h3 id = "projects" className = "mt-5"> <FaClipboardCheck/> Projects </h3> 
           <p class> I enjoy working on a variety of projects both academic and some for fun. Here are a few examples:</p> 
-          <Container> 
+          <Container className = "mb-3"> 
             <Row> 
               <Col className = "center-cards" sm = {12} md = {6} lg = {6}> 
-                <Card className = "bob-on-hover mt-3 mr-3" border style={{ width: '18rem' }}>
+                <Card className = "box-shadow bob-on-hover mt-3" border style={{ width: '18rem' }}>
                     <Card.Body>
                       <Card.Title>🍕 Discord Pizza Bot </Card.Title>
                       <Card.Text>
@@ -199,7 +244,7 @@ return (
                 </Card>
               </Col> 
               <Col className = "center-cards" sm = {12} md = {6} lg = {6}> 
-                <Card className = "bob-on-hover mt-3" border style={{ width: '18rem' }}>
+                <Card className = "box-shadow bob-on-hover mt-3" border style={{ width: '18rem' }}>
                     <Card.Body>
                       <Card.Title>🎾 Tennis Friends </Card.Title>
                       <Card.Text>
@@ -214,7 +259,7 @@ return (
                 </Card>
               </Col>
               <Col className = "center-cards" sm = {12} md = {6} lg = {6}>
-                <Card className = "bob-on-hover mt-3" border style={{ width: '18rem' }}>
+                <Card className = "box-shadow bob-on-hover mt-3" border style={{ width: '18rem' }}>
                     <Card.Body>
                       <Card.Title> 🔧 Detroit Manufacturing Systems </Card.Title>
                       <Card.Text>
@@ -228,7 +273,7 @@ return (
                 </Card>
               </Col> 
               <Col className = "center-cards" sm = {12} md = {6} lg = {6}>  
-                <Card className = "bob-on-hover mt-3" border style={{ width: '18rem' }}>
+                <Card className = "box-shadow bob-on-hover mt-3" border style={{ width: '18rem' }}>
                     <Card.Body>
                       <Card.Title> 📄 Cover Letter Generator</Card.Title>
                       <Card.Text>
@@ -246,7 +291,7 @@ return (
           
 
 
-          <h3 id = "recommendations" className = "mt-3"> <BsPeopleFill/> Recommendations  </h3> 
+          <h3 id = "recommendations" className = "mt-5"> <BsPeopleFill/> Recommendations  </h3> 
           <p> Some recommendations I've gotten from my managers in my past work experiences. </p> 
           <Accordion>
           <Accordion.Item eventKey="0">
