@@ -104,6 +104,7 @@ html, body, #root, .App {
   right: 0;
   bottom: 0;
   background: #dede5b;
+  /* background: #228B22; */
   height: 4px;
   -webkit-transform: translateY(4px);
   transform: translateY(4px);
