@@ -177,7 +177,7 @@ return (
                 and, most importantly, visualize that contract. One of the biggest takeaways I learned is that while business owners
                 are really good at what they do, they almost always are very unfamiliar with both their own finances and financial contracts.
                 <br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This tool effectively<mark> increased trust between Enova</mark> and its existing customers, 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This tool effectively<mark> increased trust between Enova</mark> and its existing customers as well as  
                 <mark> decreased the number of defaults on loans.</mark> This feature gave Enova a <mark>huge competitive advantage </mark>
                 over its competitors by giving customers so much more freedom and insight into what 
                 they were signing. 
