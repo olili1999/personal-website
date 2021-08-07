@@ -78,7 +78,7 @@ return (
             <ListGroupItem><MdEmail/> <a style ={{textDecoration: 'none'}} target = "_blank" href ="mailto:olili@umich.edu">E-mail</a> </ListGroupItem>
             <ListGroupItem><IoLogoLinkedin />&nbsp;<a style ={{textDecoration: 'none'}} target = "_blank" href = "https://www.linkedin.com/in/oliver-y-li/">LinkedIn</a></ListGroupItem>
             <ListGroupItem><FaGithub/>&nbsp;<a style ={{textDecoration: 'none'}} target = "_blank"  href ="https://github.com/olili1999">GitHub</a> </ListGroupItem>
-            <ListGroupItem><IoDocumentTextSharp/> <a style ={{textDecoration: 'none'}} target = "_blank" href ="https://drive.google.com/file/d/1C3zs45lwpNLw_OIpEd0m0-eV_YEVSUo_/view?usp=sharing">Resume</a> </ListGroupItem>
+            <ListGroupItem><IoDocumentTextSharp/> <a style ={{textDecoration: 'none'}} target = "_blank" href ="https://drive.google.com/file/d/1_xpoY7JNl5T4BFgI1oRm1boCCKXlTTMd/view?usp=sharing">Resume</a> </ListGroupItem>
           </ListGroup>
           </Card>
 
