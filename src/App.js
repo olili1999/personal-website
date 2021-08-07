@@ -38,7 +38,7 @@ return (
 
         {/* Big Outer Column #1 */}
         <Col xs = {12} sm = {12} md ={3} style = {{height: "100%"}} className = "stickyClass d-flex justify-content-center"> 
-          <Card className = "box-shadow mt-4" style={{width: '20rem'}}>
+          <Card className = "box-shadow mt-4 mb-5" style={{width: '20rem'}}>
           <OverlayTrigger placement ="bottom" overlay={<Tooltip> Me, at the Sleeping Bear Dunes in Michigan!</Tooltip>}>
             <Card.Img src= {headshot_outside}/>
           </OverlayTrigger>

@@ -46,6 +46,10 @@ body {
     scroll-padding-top: 73vw !important;
   }
 
+  .bar{ 
+    width: 15rem !important; 
+  }
+
 }
 /* 
 @media screen (min-width: 451px) and (max-width: 675px){ 
