@@ -295,7 +295,7 @@ return (
 
 
 
-          <h3 id = "academics" className = "mt-5"> <GoPencil/> Academics </h3> 
+          <h3 id = "coursework" className = "mt-5"> <GoPencil/> Coursework </h3> 
           <p class = "p-0 m-0 "> Here are some notable classes I've taken & been involved with: </p> 
           <Container className = "mb-5"> 
               <Row> 
