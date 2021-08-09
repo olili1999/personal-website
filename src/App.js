@@ -61,7 +61,7 @@ return (
               <OverlayTrigger placement ="bottom" overlay={<Tooltip> Recently got into rock climbing & I really like it!</Tooltip>}>
                 <span style = {{display: ""}} className = "m-0 p-0"><Twemoji text = "🧗‍♂️"/></span>
               </OverlayTrigger> &nbsp;
-              <OverlayTrigger placement ="bottom" overlay={<Tooltip> Last summer I ran mile a day at the last for ~75 days straight</Tooltip>}>
+              <OverlayTrigger placement ="bottom" overlay={<Tooltip> The summer during quarantine, I ran 1 mile a day for ~75 days straight</Tooltip>}>
                 <span style = {{display: ""}} className = "m-0 p-0"><Twemoji text = "🏃"/></span>
               </OverlayTrigger> &nbsp;  
               <OverlayTrigger placement ="bottom" overlay={<Tooltip> Club Tennis @UMICH</Tooltip>}>
