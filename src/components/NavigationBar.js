@@ -13,8 +13,8 @@ return (
         <Nav.Link className = "hvr-underline-reveal nav-link" href="#skills">skills</Nav.Link>
         <Nav.Link className = "hvr-underline-reveal nav-link" href="#work_experience">work experience</Nav.Link>
         <Nav.Link className = "hvr-underline-reveal nav-link" href="#projects">projects</Nav.Link>
-        <Nav.Link className = "hvr-underline-reveal nav-link" href="#recommendations">recommendations</Nav.Link>
         <Nav.Link className = "hvr-underline-reveal nav-link" href="#academics">academics</Nav.Link>
+        <Nav.Link className = "hvr-underline-reveal nav-link" href="#recommendations">recommendations</Nav.Link>
 
 
     </Nav>

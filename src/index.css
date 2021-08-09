@@ -25,9 +25,12 @@ body {
 }
 
 .bar{ 
-  width: 30rem;
+  width: 40rem;
 }
 
+.blue-link{ 
+  color: #0d6efd; 
+}
 
 
 
@@ -49,7 +52,7 @@ body {
   }
 
   .bar{ 
-    width: 15rem !important; 
+    width: 17rem !important; 
   }
 
 }

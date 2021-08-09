@@ -17,6 +17,7 @@ import Principal from "./principal.png";
 import BT from "./BT.png";
 import {Twemoji} from "react-emoji-render";
 import React, { useState, useEffect } from 'react';
+import {GoPencil} from "react-icons/go";
 
 
 
@@ -60,8 +61,10 @@ return (
               <OverlayTrigger placement ="bottom" overlay={<Tooltip> Recently got into rock climbing & I really like it!</Tooltip>}>
                 <span style = {{display: ""}} className = "m-0 p-0"><Twemoji text = "🧗‍♂️"/></span>
               </OverlayTrigger> &nbsp;
-
-              <OverlayTrigger placement ="bottom" overlay={<Tooltip> Club Tennis :)</Tooltip>}>
+              <OverlayTrigger placement ="bottom" overlay={<Tooltip> Last summer I ran mile a day at the last for ~75 days straight</Tooltip>}>
+                <span style = {{display: ""}} className = "m-0 p-0"><Twemoji text = "🏃"/></span>
+              </OverlayTrigger> &nbsp;  
+              <OverlayTrigger placement ="bottom" overlay={<Tooltip> Club Tennis @UMICH</Tooltip>}>
                 <span style = {{display: ""}} className = "m-0 p-0"><Twemoji text = "🎾"/></span>
               </OverlayTrigger> &nbsp;            
               <OverlayTrigger placement ="bottom" overlay={<Tooltip> Web Dev & Design</Tooltip>}>
@@ -70,6 +73,7 @@ return (
               <OverlayTrigger placement ="bottom" overlay={<Tooltip> Guitar</Tooltip>}>
                 <span style = {{display: ""}} className = "m-0 p-0"><Twemoji text = "🎸"/></span>
               </OverlayTrigger> &nbsp;  
+       
               
             </ListGroupItem>
 
@@ -87,7 +91,7 @@ return (
         <Col className = "d-flex flex-column" xs = {12} sm = {12} md = {9} style = {{}}>
 
           <h3 id = "about" className = "mt-3"> <BsPersonLinesFill/> About Me </h3> 
-          <p className = "p-0 m-0"> Hey, nice to meet you! I'm Oliver, a tennis player, rock climber, programmer, designer, and student at the University of Michigan. </p> 
+          <p className = "p-0 m-0"> Hey, nice to meet you! I'm Oliver, a tennis player, runner, rock climber, programmer, and student at the University of Michigan. </p> 
           <h3 id = "skills" className = "mt-4 mb-4"> <GiProgression/> Skills </h3> 
 
 
@@ -108,10 +112,10 @@ return (
             </div>
             <div className ="barContainer mb-4"> 
               <div className = "d-flex justify-content-between bar"> 
-                <p className = "m-0 p-0 float-left">React.js</p>
-                <p className = "m-0 p-0 float-right">40%</p>
+                <p className = "m-0 p-0 float-left">Frontend (React.js, HTML, CSS, Javascript) </p>
+                <p className = "m-0 p-0 float-right">50%</p>
               </div>
-              <ProgressBar variant="success" min = "0" max = "100" now = "40" className = "bar"/>
+              <ProgressBar variant="success" min = "0" max = "100" now = "50" className = "bar"/>
             </div>
             <div className ="barContainer mb-4"> 
               <div className = "d-flex justify-content-between bar"> 
@@ -225,75 +229,125 @@ return (
 
 
 
-          <h3 id = "projects" className = "mt-5"> <FaClipboardCheck/> Projects </h3> 
-          <p class> I enjoy working on a variety of projects both academic and some for fun. Here are a few examples:</p> 
-          <Container className = "mb-3"> 
-            <Row> 
-              <Col className = "center-cards" sm = {12} md = {6} lg = {6}> 
-                <Card className = "box-shadow bob-on-hover mt-3" border style={{ width: '18rem' }}>
-                    <Card.Body>
-                      <Card.Title>🍕 Discord Pizza Bot </Card.Title>
-                      <Card.Text>
-                        Last winter, I created a discord pizza bot for fun that would automatically order an optimally priced Dominos pizza. 
-                      </Card.Text>
-                    </Card.Body>
-                    <ListGroup className="list-group-flush">
-                    <ListGroupItem><a style ={{textDecoration: 'none'}} target = "_blank" href = "github.com/discord-pizza-bot">Discord Pizza Bot GitHub</a></ListGroupItem>
-                    <ListGroupItem>Tech: Selenium, Discord.py</ListGroupItem>
-                  </ListGroup>
-                </Card>
-              </Col> 
-              <Col className = "center-cards" sm = {12} md = {6} lg = {6}> 
-                <Card className = "box-shadow bob-on-hover mt-3" border style={{ width: '18rem' }}>
-                    <Card.Body>
-                      <Card.Title>🎾 Tennis Friends </Card.Title>
-                      <Card.Text>
-                        Last winter, I also spent a lot of time creating a social network website to help tennis players find people of equal level to hit with. 
-                      </Card.Text>
-                    </Card.Body>
-                    <ListGroup className="list-group-flush">
-                    <ListGroupItem><a style ={{textDecoration: 'none'}} target = "_blank" href = "github.com/tennis-react">Tennis w/ friends link</a></ListGroupItem>
-                    <ListGroupItem>Tech: React.js, Firebase</ListGroupItem>
+            <h3 id = "projects" className = "mt-5"> <FaClipboardCheck/> Projects </h3> 
+            <p class> I enjoy working on a variety of projects both academic and some for fun. Here are a few examples:</p> 
+            <Container className = "mb-3"> 
+              <Row> 
+                <Col className = "center-cards" sm = {12} md = {6} lg = {6}> 
+                  <Card className = "box-shadow bob-on-hover mt-3" border style={{ width: '18rem' }}>
+                      <Card.Body>
+                        <Card.Title>🍕 Discord Pizza Bot </Card.Title>
+                        <Card.Text>
+                          Last winter, I created a discord pizza bot for fun that would automatically order an optimally priced Dominos pizza. 
+                        </Card.Text>
+                      </Card.Body>
+                      <ListGroup className="list-group-flush">
+                      <ListGroupItem><a style ={{textDecoration: 'none'}} target = "_blank" href = "github.com/discord-pizza-bot">Discord Pizza Bot GitHub</a></ListGroupItem>
+                      <ListGroupItem>Tech: Selenium, Discord.py</ListGroupItem>
+                    </ListGroup>
+                  </Card>
+                </Col> 
+                <Col className = "center-cards" sm = {12} md = {6} lg = {6}> 
+                  <Card className = "box-shadow bob-on-hover mt-3" border style={{ width: '18rem' }}>
+                      <Card.Body>
+                        <Card.Title>🎾 Tennis Friends </Card.Title>
+                        <Card.Text>
+                          Last winter, I also spent a lot of time creating a social network website to help tennis players find people of equal level to hit with. 
+                        </Card.Text>
+                      </Card.Body>
+                      <ListGroup className="list-group-flush">
+                      <ListGroupItem><a style ={{textDecoration: 'none'}} target = "_blank" href = "github.com/tennis-react">Tennis w/ friends link</a></ListGroupItem>
+                      <ListGroupItem>Tech: React.js, Firebase</ListGroupItem>
 
-                  </ListGroup>
-                </Card>
-              </Col>
-              <Col className = "center-cards" sm = {12} md = {6} lg = {6}>
-                <Card className = "box-shadow bob-on-hover mt-3" border style={{ width: '18rem' }}>
-                    <Card.Body>
-                      <Card.Title> 🔧 Detroit Manufacturing Systems </Card.Title>
-                      <Card.Text>
-                        I participated in a company sponsored project through the Multidisciplinary Design Program. I spent a year in a manufacturing plant optimizing operations and the supply chain of rejected automotive parts. 
-                      </Card.Text>
-                    </Card.Body>
-                    <ListGroup className="list-group-flush">
-                      <ListGroupItem><a style ={{textDecoration: 'none'}} target = "_blank" href = "https://tinyurl.com/DetroitMS"> Poster Link</a></ListGroupItem>
-                      <ListGroupItem>Concepts used: Six Sigma DMAIC </ListGroupItem>
                     </ListGroup>
-                </Card>
-              </Col> 
-              <Col className = "center-cards" sm = {12} md = {6} lg = {6}>  
-                <Card className = "box-shadow bob-on-hover mt-3" border style={{ width: '18rem' }}>
-                    <Card.Body>
-                      <Card.Title> 📄 Cover Letter Generator</Card.Title>
-                      <Card.Text>
-                        I created a cover letter generator with my friend to help us navigate recruiting and applying to different types of jobs easily.  
-                      </Card.Text>
-                    </Card.Body>
-                    <ListGroup className="list-group-flush">
-                      <ListGroupItem><a style ={{textDecoration: 'none'}} target = "_blank" href = "github.com/mac">Cover Letter Generator GitHub</a></ListGroupItem>
-                      <ListGroupItem>Tech: Python</ListGroupItem>
-                    </ListGroup>
-                </Card>
-              </Col>
-            </Row>
-          </Container> 
-          
+                  </Card>
+                </Col>
+                <Col className = "center-cards" sm = {12} md = {6} lg = {6}>
+                  <Card className = "box-shadow bob-on-hover mt-3" border style={{ width: '18rem' }}>
+                      <Card.Body>
+                        <Card.Title> 🔧 Detroit Manufacturing Systems </Card.Title>
+                        <Card.Text>
+                          I participated in a company sponsored project through the Multidisciplinary Design Program. I spent a year in a manufacturing plant optimizing operations and the supply chain of rejected automotive parts. 
+                        </Card.Text>
+                      </Card.Body>
+                      <ListGroup className="list-group-flush">
+                        <ListGroupItem><a style ={{textDecoration: 'none'}} target = "_blank" href = "https://tinyurl.com/DetroitMS"> Poster Link</a></ListGroupItem>
+                        <ListGroupItem>Concepts used: Six Sigma DMAIC </ListGroupItem>
+                      </ListGroup>
+                  </Card>
+                </Col> 
+                <Col className = "center-cards" sm = {12} md = {6} lg = {6}>  
+                  <Card className = "box-shadow bob-on-hover mt-3" border style={{ width: '18rem' }}>
+                      <Card.Body>
+                        <Card.Title> 📄 Cover Letter Generator</Card.Title>
+                        <Card.Text>
+                          I created a cover letter generator with my friend to help us navigate recruiting and applying to different types of jobs easily.  
+                        </Card.Text>
+                      </Card.Body>
+                      <ListGroup className="list-group-flush">
+                        <ListGroupItem><a style ={{textDecoration: 'none'}} target = "_blank" href = "github.com/mac">Cover Letter Generator GitHub</a></ListGroupItem>
+                        <ListGroupItem>Tech: Python</ListGroupItem>
+                      </ListGroup>
+                  </Card>
+                </Col>
+              </Row>
+            </Container> 
+
+
+
+          <h3 id = "academics" className = "mt-5"> <GoPencil/> Academics </h3> 
+          <p class = "p-0 m-0 "> Here are some notable classes I've taken & been involved with: </p> 
+          <Container className = "mb-5"> 
+              <Row> 
+                <Col className = "center-cards" md = {6} lg = {4}> 
+                  <Card className = "box-shadow bob-on-hover mt-3" border style={{ width: '18rem' }}>
+                      <Card.Body>
+                        <Card.Title> <a style ={{textDecoration: 'none'}} target = "_blank" href = "https://www.eecs.umich.edu/courses/eecs281/"> Data Structures & Algorithms </a></Card.Title>
+                        <Card.Text>
+                        Introduction to algorithm analysis and O-notation; Fundamental data structures including lists, stacks, queues, priority queues, 
+                        hash tables, binary trees, search trees, balanced trees and graphs; 
+                        searching and sorting algorithms.
+                        </Card.Text>
+                      </Card.Body>
+                  </Card>
+                </Col>
+                <Col className = "center-cards" md = {6} lg = {4}> 
+                  <Card className = "box-shadow bob-on-hover mt-3" border style={{ width: '18rem' }}>
+                      <Card.Body>
+                        <Card.Title><a style ={{textDecoration: 'none'}} target = "_blank" href = "https://www.si.umich.edu/programs/courses/539"> Frontend Web Design </a></Card.Title>
+                        <Card.Text>
+                          The purpose of this course is to provide students with all necessary frontend development skills for designing and building responsive and accessible websites. 
+                          Topics include recent changes to HTML, CSS and WCAG standards, media-queries, responsive frameworks, and manual and automated testing.
+                        </Card.Text>
+                      </Card.Body>
+                      <ListGroup className="list-group-flush">
+                        <ListGroupItem>TA for both grad and undergrad class. Winter/Fall '21</ListGroupItem>
+                      </ListGroup>
+                  </Card>
+                </Col>
+                <Col className = "center-cards" md = {6} lg = {4}> 
+                  <Card className = "box-shadow bob-on-hover mt-3" border style={{ width: '18rem' }}>
+                      <Card.Body>
+                        <Card.Title><a style = {{textDecoration: 'none'}} target = "_blank" href = "https://drive.google.com/file/d/1nIXXwwPOuQ2TnefQZMacXeFg4Rmkf2Jn/view?usp=sharing"> UI/UX Design</a></Card.Title>
+                        <Card.Text>
+                          The focus of this course is to introduce you to User Interface and User Experience (UX/UX)
+                          Design. In this course you will learn how to discover and assess user needs, how to generate
+                          design ideas and quickly prototype them, and how to gather user feedback. You will also learn
+                          principles of human perception and cognition that inform effective interface design.
+                        </Card.Text>
+                      </Card.Body>
+                  </Card>
+                </Col>
+               
+              </Row>
+            </Container> 
+
+
 
 
           <h3 id = "recommendations" className = "mt-5"> <BsPeopleFill/> Recommendations  </h3> 
           <p> Some recommendations I've gotten from my managers in my past work experiences. </p> 
-          <Accordion>
+          <Accordion className = 'mb-5'>
           <Accordion.Item eventKey="0">
             <Accordion.Header className = "d-flex align-items-center" >
               <Image src = {Enova} style = {{width: "1.5rem"}} rounded/>&nbsp; 
@@ -329,7 +383,7 @@ return (
         </Accordion>
 
 
-        </Col>
+      </Col>
         
 
 
@@ -338,6 +392,10 @@ return (
       {/* <p style = {{marginLeft: "20px"}}> Portfolio made from scratch with the help of React.js & Bootstrap  </p>
       <p style = {{marginLeft: "20px"}}> &copy; Oliver Li, 2021</p>  */}
     </Container>
+
+
+
+
 
   {/* <Route exact path="/" component={Home}></Route> */}
 </div>
