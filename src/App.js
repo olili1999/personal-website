@@ -330,7 +330,7 @@ return (
                       <Card.Body>
                         <Card.Title><a style = {{textDecoration: 'none'}} target = "_blank" href = "https://drive.google.com/file/d/1nIXXwwPOuQ2TnefQZMacXeFg4Rmkf2Jn/view?usp=sharing"> UI/UX Design</a></Card.Title>
                         <Card.Text>
-                          The focus of this course is to introduce you to User Interface and User Experience (UX/UX)
+                          The focus of this course is to introduce you to User Interface and User Experience (UI/UX)
                           Design. In this course you will learn how to discover and assess user needs, how to generate
                           design ideas and quickly prototype them, and how to gather user feedback. You will also learn
                           principles of human perception and cognition that inform effective interface design.
