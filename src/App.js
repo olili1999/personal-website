@@ -13,6 +13,8 @@ import {GiProgression} from "react-icons/gi";
 
 import Umich from "./UMich.png"; 
 import Enova from "./enova-logo.png"; 
+import Llama from "./llama.png"; 
+import Kode from "./kode.png"; 
 import Principal from "./principal.png"; 
 import BT from "./BT.png";
 import {Twemoji} from "react-emoji-render";
@@ -91,14 +93,14 @@ return (
         <Col className = "d-flex flex-column" xs = {12} sm = {12} md = {9} style = {{}}>
 
           <h3 id = "about" className = "mt-3"> <BsPersonLinesFill/> About Me </h3> 
-          <p className = "p-0 m-0"> Hey, nice to meet you! I'm Oliver, a tennis player, runner, rock climber, programmer, and student at the University of Michigan. </p> 
+          <p className = "p-0 m-0 mb-4"> Hey, nice to meet you! I'm Oliver, a tennis player, runner, rock climber, programmer, and student at the University of Michigan. </p> 
           <h3 id = "skills" className = "mt-4 mb-4"> <GiProgression/> Skills </h3> 
 
 
           <div className = "d-flex flex-column align-items-center">
             <div className ="barContainer mb-4"> 
               <div className = "d-flex justify-content-between bar"> 
-                <p className = "m-0 p-0 float-left">Python</p>
+                <p className = "m-0 p-0 float-left">Python (Pandas, NumPy, Seaborn)</p>
                 <p className = "m-0 p-0 float-right">90%</p>
               </div>
               <ProgressBar variant="info" min = "0" max = "100" now = "90" className = "bar"/>
@@ -137,8 +139,26 @@ return (
 
 
 {/*  defaultActiveKey="0" */}
-          <Accordion className = "mb-5">
+            <Accordion className = "mb-5">
+
             <Accordion.Item eventKey="0" >
+              <Accordion.Header className = "d-flex align-items-center">
+                <Image src = {Llama} style = {{width: "1.5rem"}} rounded/>&nbsp; 
+                <p className = "m-0 p-0"> Llamasoft (a Coupa Company) - Product Management Intern (Fall 2021)</p>
+              </Accordion.Header>
+              <Accordion.Body>
+                <h6 className = "p-0 m-0"> <FaMapMarker/>&nbsp;Ann Arbor, MI </h6>
+                <strong>Senior Design Project</strong> <br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Llamasoft is currently working on initiatives to simplify & enhance the process of collecting supply
+                chain data elements and generating a representative model which can be used to optimize and
+                explore alternative supply chain designs. Currently, the process to gather, cleanse, and prepare
+                data to build a supply chain model can take 2-3 months for the average project. There is an opportunity to provide customer value by streamlining the process of collecting the
+                required data and building models. We’d also like to help our customers build a repeatable data
+                foundation which can power future optimization studies/analyses.
+                </Accordion.Body>
+
+            </Accordion.Item>
+            <Accordion.Item eventKey="1" >
               <Accordion.Header className = "d-flex align-items-center">
                 <Image src = {BT} style = {{width: "1.5rem"}} rounded/>&nbsp; 
                 <p className = "m-0 p-0"> Belvedere Trading - Product Analyst Intern (Summer 2021) </p>
@@ -161,8 +181,7 @@ return (
                 </Accordion.Body>
 
             </Accordion.Item>
-
-             <Accordion.Item eventKey="1">
+            <Accordion.Item eventKey="2">
               <Accordion.Header className = "d-flex align-items-center">
                 <Image src = {Enova} style = {{width: "1.5rem"}} rounded/>&nbsp; 
                 <p className = "m-0 p-0"> Enova International - Strategy & Operations Intern (Summer 2020) </p>
@@ -187,7 +206,24 @@ return (
                 they were signing. 
               </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="2">
+             <Accordion.Item eventKey="3">
+              <Accordion.Header className = "d-flex align-items-center">
+                <Image src = {Kode} style = {{width: "1.5rem"}} rounded/>&nbsp; 
+                <p className = "m-0 p-0"> Kode Labs - Product Management Intern (Winter, Spring 2020) </p>
+              </Accordion.Header>
+              <Accordion.Body>
+                <h6 className = "p-0 m-0"> <FaMapMarker/>&nbsp;Detroit, MI (Remote) </h6> 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I worked at Kode Labs for around half a year as a product management intern. 
+                I was primarily focused on <mark>new product innovation and ideation</mark>. The first half of the internship my team and I focused a lot of our time
+                on customer discovery and understanding the smart building space. Kode Labs' main product is building management 
+                software that enables sustainability and operational efficiences, and comfort. 
+                As a team, we interviewed several building managers as well as executives from industry leading building management experts from Dell, Microsoft, etc. to understand
+                their main pain points. For the future of sustainability, one term that kept getting brought up was <mark>LEED.</mark> LEED stands for Leadership in Energy and Environmental Design. 
+           We planned to build out an executive dashboard that contains all building statistics regarding a property manager’s building and how they are performing in respect to state & federal building regulations.
+           We also want to notify building managers how far they are from achieving LEED certification standards, which is important for company mission, strategy, and image.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="4">
             <Accordion.Header className = "d-flex align-items-center">
                 <Image src = {Principal} style = {{width: "1.5rem"}} rounded/>&nbsp; 
                 <p className ="p-0 m-0"> Principal Financial Group - Data Science Intern (Summer 2019)</p> 
