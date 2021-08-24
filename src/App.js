@@ -320,9 +320,6 @@ return (
                           I created a cover letter generator with my friend to help us navigate recruiting and applying to different types of jobs easily.  
                         </Card.Text>
                       </Card.Body>
-                      <ListGroup className="list-group-flush">
-                        <ListGroupItem>Tech: Python</ListGroupItem>
-                      </ListGroup>
                   </Card>
                 </Col>
               </Row>
