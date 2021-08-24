@@ -321,7 +321,6 @@ return (
                         </Card.Text>
                       </Card.Body>
                       <ListGroup className="list-group-flush">
-                        <ListGroupItem><a style ={{textDecoration: 'none'}} target = "_blank" href = "github.com/mac">Cover Letter Generator GitHub</a></ListGroupItem>
                         <ListGroupItem>Tech: Python</ListGroupItem>
                       </ListGroup>
                   </Card>
