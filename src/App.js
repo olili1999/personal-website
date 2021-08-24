@@ -317,7 +317,8 @@ return (
                       <Card.Body>
                         <Card.Title> 📄 Cover Letter Generator</Card.Title>
                         <Card.Text>
-                          I created a cover letter generator with my friend to help us navigate recruiting and applying to different types of jobs easily.  
+                          I created a cover letter generator with my friend to help us navigate recruiting and applying to different types of jobs easily. It was a good opportunity to learn how to 
+                          work on a coding project with someone else outside of class. I learned how to collaborate on technical projects by communicating and bouncing ideas between myself and another person. 
                         </Card.Text>
                       </Card.Body>
                   </Card>
