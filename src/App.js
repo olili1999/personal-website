@@ -278,7 +278,7 @@ return (
                         </Card.Text>
                       </Card.Body>
                       <ListGroup className="list-group-flush">
-                      <ListGroupItem><a style ={{textDecoration: 'none'}} target = "_blank" href = "github.com/discord-pizza-bot">Discord Pizza Bot GitHub</a></ListGroupItem>
+                      <ListGroupItem><a style ={{textDecoration: 'none'}} target = "_blank" href = "https://github.com/olili1999/747discordbot">Discord Pizza Bot GitHub</a></ListGroupItem>
                       <ListGroupItem>Tech: Selenium, Discord.py</ListGroupItem>
                     </ListGroup>
                   </Card>
@@ -286,13 +286,13 @@ return (
                 <Col className = "center-cards" sm = {12} md = {6} lg = {6}> 
                   <Card className = "box-shadow bob-on-hover mt-3" border style={{ width: '18rem' }}>
                       <Card.Body>
-                        <Card.Title>🎾 Tennis Friends </Card.Title>
+                        <Card.Title>🎾 Tennis with Friends </Card.Title>
                         <Card.Text>
                           Last winter, I also spent a lot of time creating a social network website to help tennis players find people of equal level to hit with. 
                         </Card.Text>
                       </Card.Body>
                       <ListGroup className="list-group-flush">
-                      <ListGroupItem><a style ={{textDecoration: 'none'}} target = "_blank" href = "github.com/tennis-react">Tennis w/ friends link</a></ListGroupItem>
+                      <ListGroupItem><a style ={{textDecoration: 'none'}} target = "_blank" href = "https://github.com/olili1999/tennis-react">Tennis w/ friends link</a></ListGroupItem>
                       <ListGroupItem>Tech: React.js, Firebase</ListGroupItem>
 
                     </ListGroup>
