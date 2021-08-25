@@ -93,7 +93,8 @@ return (
         <Col className = "d-flex flex-column" xs = {12} sm = {12} md = {9} style = {{}}>
 
           <h3 id = "about" className = "mt-3"> <BsPersonLinesFill/> About Me </h3> 
-          <p className = "p-0 m-0 mb-4"> Hey, nice to meet you! I'm Oliver, a tennis player, runner, rock climber, programmer, and student at the University of Michigan. </p> 
+          <p className = "p-0 m-0 mb-4"> Hey, nice to meet you! I'm Oliver, a tennis player, runner, rock climber, programmer, and student at the University of Michigan. Right now, I'm interested in building 
+          consumer-facing technology products.</p> 
           <h3 id = "skills" className = "mt-4 mb-4"> <GiProgression/> Skills </h3> 
 
 
