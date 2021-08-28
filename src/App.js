@@ -384,6 +384,37 @@ return (
           <Accordion className = 'mb-5'>
           <Accordion.Item eventKey="0">
             <Accordion.Header className = "d-flex align-items-center" >
+              <Image src = {BT} style = {{width: "1.5rem"}} rounded/>&nbsp; 
+              <p className ="p-0 m-0"> Jessie Ho, Product Manager @ Enova International</p>
+            </Accordion.Header>
+            <Accordion.Body>
+            <figure class="text-start">
+              <blockquote style = {{fontSize: "1rem"}} class="blockquote">
+                <p>
+                I’m writing to recommend Oliver Li. I supervised Oliver during his 10-week Product Analyst Internship at
+Belvedere Trading.
+Oliver was an excellent addition to the Product team. He showed his work ethic and can-do attitude
+when reaching out to end users to discuss requirements and consistently made adjustments till
+requirements were understood. He openly sought feedback and implemented any comments
+immediately.
+Oliver quickly learned the basic concepts of the role and industry by asking thoughtful questions. Over
+time he applied his own critical thinking to push the quality of his assignments even further. His
+enterprising and intellectual spirit really stood out during our company Hackathon. He took the initiative
+to present his own project, define the deliverables from an end user&#39;s perspective, and do some of the
+front-end development work himself. Along with two other interns, they were one of only a few to
+successfully finish their project, which is now a crucial piece in our recruiting system.
+I believe that Oliver&#39;s technical skills, great work ethic, and adaptability make him a valuable asset in any
+role or industry and I strongly recommend him for any opportunity.
+                </p>
+              </blockquote>
+              <figcaption class="blockquote-footer">
+                <cite title="Source Title"><a style = {{textDecoration: "none"}}target = "_blank" href = "https://www.linkedin.com/in/jessie-ho-78b72aaa/"> Jessie Ho </a> </cite>
+              </figcaption>
+            </figure>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="1">
+            <Accordion.Header className = "d-flex align-items-center" >
               <Image src = {Enova} style = {{width: "1.5rem"}} rounded/>&nbsp; 
               <p className ="p-0 m-0"> Shivam Malhotra, Product Manager @ Enova International</p>
             </Accordion.Header>
@@ -398,7 +429,7 @@ return (
             </figure>
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="1">
+          <Accordion.Item eventKey="2">
             <Accordion.Header className = "d-flex align-items-center">
                 <Image src = {Principal} style = {{width: "1.5rem"}} rounded/>&nbsp; 
                 <p className ="p-0 m-0"> Haiyang (Ocean) Zhang, Data Scientist @ Principal Financial Group </p> 
