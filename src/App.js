@@ -385,7 +385,7 @@ return (
           <Accordion.Item eventKey="0">
             <Accordion.Header className = "d-flex align-items-center" >
               <Image src = {BT} style = {{width: "1.5rem"}} rounded/>&nbsp; 
-              <p className ="p-0 m-0"> Jessie Ho, Product Manager @ Enova International</p>
+              <p className ="p-0 m-0"> Jessie Ho, Product Manager @ Belvedere Trading</p>
             </Accordion.Header>
             <Accordion.Body>
             <figure class="text-start">
