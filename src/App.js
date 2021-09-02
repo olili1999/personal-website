@@ -185,7 +185,7 @@ return (
             <Accordion.Item eventKey="2">
               <Accordion.Header className = "d-flex align-items-center">
                 <Image src = {Enova} style = {{width: "1.5rem"}} rounded/>&nbsp; 
-                <p className = "m-0 p-0"> Enova International - Strategy & Operations Intern (Summer 2020) </p>
+                <p className = "m-0 p-0"> Enova International - Product Management Intern (Summer 2020) </p>
               </Accordion.Header>
               <Accordion.Body>
                 <h6 className = "p-0 m-0"> <FaMapMarker/>&nbsp;Chicago, IL (Remote) </h6> 
