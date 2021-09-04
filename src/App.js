@@ -165,7 +165,7 @@ return (
                 <p className = "m-0 p-0"> Belvedere Trading - Product Analyst Intern (Summer 2021) </p>
               </Accordion.Header>
               <Accordion.Body>
-                <h6 className = "p-0 m-0"> <FaMapMarker/>&nbsp;Chicago, IL (Remote) </h6> 
+                <h6 className = "p-0 m-0"> <FaMapMarker/>&nbsp;Chicago, IL (Remote) | Received Full-Time Return Offer </h6> 
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At Belvedere, I worked as a product analyst intern. The first 6 weeks of our internship were 
                 spent in Belvedere Trading University (BTU), where we took classes on the basics of <mark>market making</mark>, <market>core options theory</market>, basic dev environments, and internal belvedere systems. Alongside our rigorous courses in BTU, we shadowed across all the different products 
                 and year-long initiatives across the company. Throughout our shadows, we were assigned work to complete across every stage of the <mark> product management lifecycle.</mark> We worked with several different end users, from traders (the most common of course), accounts, clerks, and risk managers to define 
@@ -188,7 +188,7 @@ return (
                 <p className = "m-0 p-0"> Enova International - Product Management Intern (Summer 2020) </p>
               </Accordion.Header>
               <Accordion.Body>
-                <h6 className = "p-0 m-0"> <FaMapMarker/>&nbsp;Chicago, IL (Remote) </h6> 
+                <h6 className = "p-0 m-0"> <FaMapMarker/>&nbsp;Chicago, IL (Remote) | Received Return Offer </h6> 
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I worked at Enova International as the sole S&O intern with a focus
                 on <mark>product launch strategy.</mark>
                 &nbsp;Collaborating with various stakeholders in many departments, <mark>I lead</mark> feature ideation 
