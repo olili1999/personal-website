@@ -17,6 +17,9 @@ import Llama from "./llama.png";
 import Kode from "./kode.png"; 
 import Principal from "./principal.png"; 
 import BT from "./BT.png";
+import Microsoft from "./Microsoft.png";
+import gopuff from "./gopuff.png";
+
 import {Twemoji} from "react-emoji-render";
 import React, { useState, useEffect } from 'react';
 import {GoPencil} from "react-icons/go";
@@ -140,16 +143,42 @@ return (
 
 
 {/*  defaultActiveKey="0" */}
-            <Accordion className = "mb-5">
 
+          <Accordion defaultActiveKey="0" className = "mb-5">
             <Accordion.Item eventKey="0" >
+              <Accordion.Header className = "d-flex align-items-center">
+                <Image src = {gopuff} style = {{width: "1.5rem"}} rounded/>&nbsp; 
+                <p className = "m-0 p-0"> Gopuff - Incoming Associate Product Manager (Fall 2022)</p>
+              </Accordion.Header>
+              <Accordion.Body>
+                <h6 className = "p-0 m-0"> <FaMapMarker/>&nbsp;Remote </h6>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 of 10 incoming associate product managers at Gopuff. 
+                </Accordion.Body>
+
+            </Accordion.Item>
+            <Accordion.Item eventKey="1" >
+              <Accordion.Header className = "d-flex align-items-center">
+                <Image src = {Microsoft} style = {{width: "1.5rem"}} rounded/>&nbsp; 
+                <p className = "m-0 p-0"> Microsoft Research - Research Intern (Fall 2021, Winter 2022)</p>
+              </Accordion.Header>
+              <Accordion.Body>
+                <h6 className = "p-0 m-0"> <FaMapMarker/>&nbsp;Remote </h6>
+                <strong>School of Information - Senior Design Project</strong> <br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Working with Siddharth Suri and John Krumm of the Microsoft Research Artificial Intelligence Lab to make the public more 
+                aware of the data social media companies can track about you and the inferences they can make using this data. 
+                </Accordion.Body>
+
+            </Accordion.Item>
+
+
+            <Accordion.Item eventKey="2" >
               <Accordion.Header className = "d-flex align-items-center">
                 <Image src = {Llama} style = {{width: "1.5rem"}} rounded/>&nbsp; 
                 <p className = "m-0 p-0"> Llamasoft (a Coupa Company) - Product Management Intern (Fall 2021)</p>
               </Accordion.Header>
               <Accordion.Body>
                 <h6 className = "p-0 m-0"> <FaMapMarker/>&nbsp;Ann Arbor, MI </h6>
-                <strong>Senior Design Project</strong> <br/>
+                <strong>Industrial & Operations Engineering - Senior Design Project</strong> <br/>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Llamasoft is currently working on initiatives to simplify & enhance the process of collecting supply
                 chain data elements and generating a representative model which can be used to optimize and
                 explore alternative supply chain designs. Currently, the process to gather, cleanse, and prepare
@@ -159,7 +188,7 @@ return (
                 </Accordion.Body>
 
             </Accordion.Item>
-            <Accordion.Item eventKey="1" >
+            <Accordion.Item eventKey="3" >
               <Accordion.Header className = "d-flex align-items-center">
                 <Image src = {BT} style = {{width: "1.5rem"}} rounded/>&nbsp; 
                 <p className = "m-0 p-0"> Belvedere Trading - Product Analyst Intern (Summer 2021) </p>
@@ -182,7 +211,7 @@ return (
                 </Accordion.Body>
 
             </Accordion.Item>
-            <Accordion.Item eventKey="2">
+            <Accordion.Item eventKey="4">
               <Accordion.Header className = "d-flex align-items-center">
                 <Image src = {Enova} style = {{width: "1.5rem"}} rounded/>&nbsp; 
                 <p className = "m-0 p-0"> Enova International - Product Management Intern (Summer 2020) </p>
@@ -207,7 +236,7 @@ return (
                 they were signing. 
               </Accordion.Body>
             </Accordion.Item>
-             <Accordion.Item eventKey="3">
+             <Accordion.Item eventKey="5">
               <Accordion.Header className = "d-flex align-items-center">
                 <Image src = {Kode} style = {{width: "1.5rem"}} rounded/>&nbsp; 
                 <p className = "m-0 p-0"> Kode Labs - Product Management Intern (Winter, Spring 2020) </p>
@@ -224,7 +253,7 @@ return (
            We also want to notify building managers how far they are from achieving LEED certification standards, which is important for company mission, strategy, and image.
               </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="4">
+            <Accordion.Item eventKey="6">
             <Accordion.Header className = "d-flex align-items-center">
                 <Image src = {Principal} style = {{width: "1.5rem"}} rounded/>&nbsp; 
                 <p className ="p-0 m-0"> Principal Financial Group - Data Science Intern (Summer 2019)</p> 
