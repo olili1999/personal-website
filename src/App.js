@@ -164,7 +164,7 @@ return (
               </Accordion.Header>
               <Accordion.Body>
                 <h6 className = "p-0 m-0"> <FaMapMarker/>&nbsp;Remote </h6>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First product management hire and lead product designer at Intros AI. Designed and shipped dozens of features across the product. Check out this <a href = "https://www.forbes.com/sites/frederickdaso/2022/07/06/social-infrastructure-startup-intros-raises-13m-to-automate-community-member-introductions/?sh=267119135668" target = "_blank"> Forbes article written about what we do and where we're going. </a>  
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<mark>First product management hire</mark> and <mark>lead product designer</mark> at Intros AI. Designed and shipped dozens of features across the product. Check out this <a style = {{textDecoration: "none"}} href = "https://www.forbes.com/sites/frederickdaso/2022/07/06/social-infrastructure-startup-intros-raises-13m-to-automate-community-member-introductions/?sh=267119135668" target = "_blank"> Forbes article written about what we do and where we're going. </a>  
                 </Accordion.Body>
 
             </Accordion.Item>
@@ -191,12 +191,7 @@ return (
               <Accordion.Body>
                 <h6 className = "p-0 m-0"> <FaMapMarker/>&nbsp;Ann Arbor, MI </h6>
                 <strong>Industrial & Operations Engineering - Senior Design Project</strong> <br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Llamasoft is currently working on initiatives to simplify & enhance the process of collecting supply
-                chain data elements and generating a representative model which can be used to optimize and
-                explore alternative supply chain designs. Currently, the process to gather, cleanse, and prepare
-                data to build a supply chain model can take 2-3 months for the average project. There is an opportunity to provide customer value by streamlining the process of collecting the
-                required data and building models. We’d also like to help our customers build a repeatable data
-                foundation which can power future optimization studies/analyses.
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prototyping features for Supply Chain modeller software to convince users to switch from the desktop to cloud-based offering.
                 </Accordion.Body>
 
             </Accordion.Item>
