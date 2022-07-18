@@ -19,6 +19,8 @@ import Principal from "./principal.png";
 import BT from "./BT.png";
 import Microsoft from "./Microsoft.png";
 import gopuff from "./gopuff.png";
+import Intros from "./intros_logo.png";
+
 
 import {Twemoji} from "react-emoji-render";
 import React, { useState, useEffect } from 'react';
@@ -77,8 +79,7 @@ return (
               </OverlayTrigger> &nbsp;  
               <OverlayTrigger placement ="bottom" overlay={<Tooltip> Guitar</Tooltip>}>
                 <span style = {{display: ""}} className = "m-0 p-0"><Twemoji text = "🎸"/></span>
-              </OverlayTrigger> &nbsp;  
-       
+              </OverlayTrigger> &nbsp;         
               
             </ListGroupItem>
 
@@ -152,11 +153,22 @@ return (
               </Accordion.Header>
               <Accordion.Body>
                 <h6 className = "p-0 m-0"> <FaMapMarker/>&nbsp;Remote </h6>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 of 10 incoming associate product managers at Gopuff. 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 of 8 incoming associate product managers at Gopuff. 
                 </Accordion.Body>
 
             </Accordion.Item>
             <Accordion.Item eventKey="1" >
+              <Accordion.Header className = "d-flex align-items-center">
+                <Image src = {Intros} style = {{width: "1.5rem"}} rounded/>&nbsp; 
+                <p className = "m-0 p-0"> Intros AI - Product Manager & Lead Designer (March - August 2022) </p>
+              </Accordion.Header>
+              <Accordion.Body>
+                <h6 className = "p-0 m-0"> <FaMapMarker/>&nbsp;Remote </h6>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First product management hire and lead product designer at Intros AI. Designed and shipped dozens of features across the product. Check out this <a href = "https://www.forbes.com/sites/frederickdaso/2022/07/06/social-infrastructure-startup-intros-raises-13m-to-automate-community-member-introductions/?sh=267119135668" target = "_blank"> Forbes article written about what we do and where we're going. </a>  
+                </Accordion.Body>
+
+            </Accordion.Item>
+            <Accordion.Item eventKey="2" >
               <Accordion.Header className = "d-flex align-items-center">
                 <Image src = {Microsoft} style = {{width: "1.5rem"}} rounded/>&nbsp; 
                 <p className = "m-0 p-0"> Microsoft Research - Research Intern (Fall 2021, Winter 2022)</p>
@@ -171,7 +183,7 @@ return (
             </Accordion.Item>
 
 
-            <Accordion.Item eventKey="2" >
+            <Accordion.Item eventKey="3" >
               <Accordion.Header className = "d-flex align-items-center">
                 <Image src = {Llama} style = {{width: "1.5rem"}} rounded/>&nbsp; 
                 <p className = "m-0 p-0"> Llamasoft (a Coupa Company) - Product Management Intern (Fall 2021)</p>
@@ -188,7 +200,7 @@ return (
                 </Accordion.Body>
 
             </Accordion.Item>
-            <Accordion.Item eventKey="3" >
+            <Accordion.Item eventKey="4" >
               <Accordion.Header className = "d-flex align-items-center">
                 <Image src = {BT} style = {{width: "1.5rem"}} rounded/>&nbsp; 
                 <p className = "m-0 p-0"> Belvedere Trading - Product Analyst Intern (Summer 2021) </p>
@@ -211,7 +223,7 @@ return (
                 </Accordion.Body>
 
             </Accordion.Item>
-            <Accordion.Item eventKey="4">
+            <Accordion.Item eventKey="5">
               <Accordion.Header className = "d-flex align-items-center">
                 <Image src = {Enova} style = {{width: "1.5rem"}} rounded/>&nbsp; 
                 <p className = "m-0 p-0"> Enova International - Product Management Intern (Summer 2020) </p>
@@ -236,7 +248,7 @@ return (
                 they were signing. 
               </Accordion.Body>
             </Accordion.Item>
-             <Accordion.Item eventKey="5">
+             <Accordion.Item eventKey="6">
               <Accordion.Header className = "d-flex align-items-center">
                 <Image src = {Kode} style = {{width: "1.5rem"}} rounded/>&nbsp; 
                 <p className = "m-0 p-0"> Kode Labs - Product Management Intern (Winter, Spring 2020) </p>
@@ -253,7 +265,7 @@ return (
            We also want to notify building managers how far they are from achieving LEED certification standards, which is important for company mission, strategy, and image.
               </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="6">
+            <Accordion.Item eventKey="7">
             <Accordion.Header className = "d-flex align-items-center">
                 <Image src = {Principal} style = {{width: "1.5rem"}} rounded/>&nbsp; 
                 <p className ="p-0 m-0"> Principal Financial Group - Data Science Intern (Summer 2019)</p> 
@@ -410,8 +422,46 @@ return (
 
           <h3 id = "recommendations" className = "mt-5"> <BsPeopleFill/> Recommendations  </h3> 
           <p> Some recommendations I've gotten from my managers in my past work experiences. </p> 
+          
           <Accordion className = 'mb-5'>
           <Accordion.Item eventKey="0">
+            <Accordion.Header className = "d-flex align-items-center" >
+              <Image src = {Microsoft} style = {{width: "1.5rem"}} rounded/>&nbsp; 
+              <p className ="p-0 m-0"> John Krumm, Senior Principal Researcher @ Microsoft</p>
+            </Accordion.Header>
+            <Accordion.Body>
+            <figure class="text-start">
+              <blockquote style = {{fontSize: "1rem"}} class="blockquote">
+                <p>
+                I had the pleasure of advising Oliver on his capstone project for his senior year course in "SI 485 Winter 2022 - Information Analytics Project Course." at the University of Michigan. I’m a senior principal researcher at Microsoft Research in Redmond, WA, and I volunteered to help with this class. Oliver went way beyond my expectations on this project about revealing a person’s personal data on the Web. Working with the group, he built a web page to ingest downloaded social media files, parse the data, and display it in a compelling way. Oliver contributed significantly to the project both in terms of ideas and code. He was always an active participant in meetings and maintained an upbeat, team-oriented attitude even when we were working through uncertainty about what to do and how to do it. Oliver was consistently easy and fun to work with and demonstrated intelligence, initiative, and cooperation throughout the project.
+                </p>
+              </blockquote>
+              <figcaption class="blockquote-footer">
+                <cite title="Source Title"><a style = {{textDecoration: "none"}}target = "_blank" href = "https://www.microsoft.com/en-us/research/people/jckrumm/"> John Krumm </a> </cite>
+              </figcaption>
+            </figure>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="1">
+            <Accordion.Header className = "d-flex align-items-center" >
+              <Image src = {Microsoft} style = {{width: "1.5rem"}} rounded/>&nbsp; 
+              <p className ="p-0 m-0"> Siddharth Suri, Senior Principal Researcher @ Microsoft</p>
+            </Accordion.Header>
+            <Accordion.Body>
+            <figure class="text-start">
+              <blockquote style = {{fontSize: "1rem"}} class="blockquote">
+                <p>
+                I mentored Oliver during their senior “capstone” project at the University of Michigan. The project involved building a web app that would allow people to visualize and make sense of the data that social media sites and other online companies collect on them. The idea is that people could make a more informed decision on their personal privacy once people understand what data is being collected about them. Together with Oliver’s teammates they built a web app that showed users how to export their data from companies such as Google, Snapchat and Instagram, upload that data to the web app so that it could be understood and visualized.
+The visualization engine was the most important and technically challenging part of this. Oliver and their team went way above and beyond my expectations and built a truly impressive web app that showed the data clearly, cleanly in a way that was easy to understand. Finally, Oliver showed they could work well in a team setting. In fact, the entire team dynamic was a pleasure to watch. They effectively brainstormed, executed, and delivered together. I would most definitely work with them again in the future.
+                </p>
+              </blockquote>
+              <figcaption class="blockquote-footer">
+                <cite title="Source Title"><a style = {{textDecoration: "none"}}target = "_blank" href = "https://www.microsoft.com/en-us/research/people/suri/"> Siddharth Suri </a> </cite>
+              </figcaption>
+            </figure>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="2">
             <Accordion.Header className = "d-flex align-items-center" >
               <Image src = {BT} style = {{width: "1.5rem"}} rounded/>&nbsp; 
               <p className ="p-0 m-0"> Jessie Ho, Product Manager @ Belvedere Trading</p>
@@ -442,7 +492,7 @@ role or industry and I strongly recommend him for any opportunity.
             </figure>
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="1">
+          <Accordion.Item eventKey="3">
             <Accordion.Header className = "d-flex align-items-center" >
               <Image src = {Enova} style = {{width: "1.5rem"}} rounded/>&nbsp; 
               <p className ="p-0 m-0"> Shivam Malhotra, Product Manager @ Enova International</p>
@@ -458,7 +508,7 @@ role or industry and I strongly recommend him for any opportunity.
             </figure>
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="2">
+          <Accordion.Item eventKey="4">
             <Accordion.Header className = "d-flex align-items-center">
                 <Image src = {Principal} style = {{width: "1.5rem"}} rounded/>&nbsp; 
                 <p className ="p-0 m-0"> Haiyang (Ocean) Zhang, Data Scientist @ Principal Financial Group </p> 
