@@ -149,11 +149,12 @@ return (
             <Accordion.Item eventKey="0" >
               <Accordion.Header className = "d-flex align-items-center">
                 <Image src = {gopuff} style = {{width: "1.5rem"}} rounded/>&nbsp; 
-                <p className = "m-0 p-0"> Gopuff - Incoming Associate Product Manager (Fall 2022)</p>
+                <p className = "m-0 p-0"> Gopuff - Incoming Associate Product Manager (Rescinded Offer) (Fall 2022)</p>
               </Accordion.Header>
               <Accordion.Body>
                 <h6 className = "p-0 m-0"> <FaMapMarker/>&nbsp;Remote </h6>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 of 8 incoming associate product managers at Gopuff. 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                My offer was rescinded based on GoPuff's 10% workforce reduction. I was supposed to join Gopuff's first APM cohort of 8 on the delivery technology team. 
                 </Accordion.Body>
 
             </Accordion.Item>
@@ -164,7 +165,12 @@ return (
               </Accordion.Header>
               <Accordion.Body>
                 <h6 className = "p-0 m-0"> <FaMapMarker/>&nbsp;Remote </h6>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<mark>First product management hire</mark> and <mark>lead product designer</mark> at Intros AI. Designed and shipped dozens of features across the product. Check out this <a style = {{textDecoration: "none"}} href = "https://www.forbes.com/sites/frederickdaso/2022/07/06/social-infrastructure-startup-intros-raises-13m-to-automate-community-member-introductions/?sh=267119135668" target = "_blank"> Forbes article written about what we do and where we're going. </a>  
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<mark>First product management hire</mark> and <mark>lead product designer</mark> at Intros AI, a Neo/venture backed startup focused on virtual 1:1 introductions in communities. Designed and shipped dozens of features across the product. Check out this <a style = {{textDecoration: "none"}} href = "https://www.forbes.com/sites/frederickdaso/2022/07/06/social-infrastructure-startup-intros-raises-13m-to-automate-community-member-introductions/?sh=267119135668" target = "_blank"> Forbes article written about what we do and where we're going. </a>  
+<br/><br/>
+Some of my highlights at the company are: <br/>
+• Created Intros’ first <mark> design system </mark> and shifted culture to be design-first instead of engineering first, creating consistent feel across all product lines saving both product and engineering employees combined <mark>20 hours/week</mark> <br/>
+• Designed, tested, and shipped re-design of <mark>Discord product line</mark>, expanding total addressable market by hundreds of thousands of users<br/>
+• Launched <mark> CSV upload feature </mark> for communities with pre-existing data collected in membership applications/surveys, cutting down average community rollout time from 2 weeks to less than <mark> 1 hour</mark>
                 </Accordion.Body>
 
             </Accordion.Item>
